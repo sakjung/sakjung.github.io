@@ -66,7 +66,7 @@ author: Jung
 # Uncomment the links you want to show in the footer and add your information to each link.
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
-social-network-links: "https://www.instagram.com/sakjungcominatya"
+social-network-links:
   rss: true
   email: "jung-seok.sung@warwick.ac.uk"
 #  facebook: deanattali
@@ -80,15 +80,15 @@ social-network-links: "https://www.instagram.com/sakjungcominatya"
   instagram: sakjungcominatya
 #  youtube: user/deanat78
 #  spotify: yourname
-  telephone: +447465654976
+  telephone: "+447465654976"
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: false
-  facebook: false
+  #twitter: false
+  #facebook: false
   linkedin: true
   instagram: true
   github: true
