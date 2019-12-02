@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: "sakjung code"
+title: sakjung code
 
 # Short description of your site
-description: "code balling place"
+description: code balling place
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -70,17 +70,17 @@ social-network-links: "https://www.instagram.com/sakjungcominatya/"
   rss: true
   email: "jung-seok.sung@warwick.ac.uk"
 #  facebook: deanattali
-  github: "sakjung"
+  github: sakjung
 #  twitter: daattali
 #  reddit: yourname
-  linkedin: "jungseoksung0617"
+  linkedin: jungseoksung0617
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-  instagram: "sakjungcominatya"
+  instagram: sakjungcominatya
 #  youtube: user/deanat78
 #  spotify: yourname
-  telephone: "+447465654976"
+  telephone: +447465654976
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
@@ -131,7 +131,7 @@ url-pretty: "sakjung.com"  # eg. "deanattali.com/beautiful-jekyll"
 # To use Staticman comments, fill in repository, branch, and endpoint
 staticman:
   repository : "sakjung/sakjung.github.io" # GitHub username/repository eg. "daattali/beautiful-jekyll"
-  branch     : "master" # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
   endpoint   : # URL of your own deployment, with a trailing slash (will fallback to a public GitLab instance) eg. https://<your-api>/v3/entry/github/
   reCaptcha:
     # reCaptcha for Staticman (OPTIONAL, but recommended for spam protection)
