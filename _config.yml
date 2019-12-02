@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: Sakjung
+title: sakjung
 
 # Short description of your site
 description: code balling place
@@ -20,7 +20,7 @@ baseurl: ""
 
 # List of links in the navigation bar
 #navbar-links:
-#  About Me: "aboutme"
+  About Me: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
@@ -87,9 +87,11 @@ social-network-links: "https://www.instagram.com/sakjungcominatya/"
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
+  twitter: false
+  facebook: false
   linkedin: true
+  instagram: true
+  github: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
