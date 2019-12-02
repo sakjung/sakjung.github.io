@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: sakjung code
+title: Sakjung world
 
 # Short description of your site
 description: code balling place
@@ -19,8 +19,8 @@ baseurl: ""
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
-#navbar-links:
-#  About Me: "aboutme"
+navbar-links:
+  About Me: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
@@ -59,8 +59,8 @@ footer-link-col: "#404040"
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
-author: Jung
-  name: Some Person
+author: 
+  name: Jung
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
