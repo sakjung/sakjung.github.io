@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About me
-subtitle: 
 ---
 
 My name is Jung Seok Sung. I am currently studying MSc Business Analytics at Warwick Business School. This will be my first step as a data analyst / data scientist in my future career. See me rising like a sun comes up. **I NEVER EVER STOP!**. 
