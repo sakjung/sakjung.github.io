@@ -9,7 +9,7 @@ The following is the list of my charateristics so have a look if you want to kno
 
 - Korean
 - Hip-Hop and R&B addicted
-- I am 孤独のグルメ...I mean I love to find out good, but hidden restaurants 
+- I am 孤独のグルメ...
 - I will write more if I have got somethings more on my mind
 
 ### my history
