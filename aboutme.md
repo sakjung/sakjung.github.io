@@ -9,7 +9,7 @@ The following is the list of my charateristics so have a look if you want to kno
 
 - Korean
 - Hip-Hop and R&B addicted
-- Overwatch Grand Master (Season 4), major with `Mei`. Then I quitted due to the aim hack crisis...If you know, then you know
+- Overwatch `Grand Master`, most 3 with `Mei / Anna / Zen`. Then I quitted **THANKS TO** the `Aim Hack Crisis` around season 4 and 5...If you know, then you know
 - I am 孤独のグルメ...
 - I will write more if I have got something pops up on my mind
 
