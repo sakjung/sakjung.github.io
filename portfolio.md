@@ -28,6 +28,7 @@ title: Portfolio
 <br />[repository](https://github.com/sakjung/extended-energy-balance-oecd.git)
 
 # Datacamp Projects
-[![DataCamp](https://www.datacamp.com/datacamp.png = 200x200)](https://www.datacamp.com/profile/ssangyu123){: .center-block :}
+
+[<img src="https://www.datacamp.com/datacamp.png" width="200" height="200" />](https://www.datacamp.com/profile/ssangyu123){: .center-block :}
 
 There are more coming...
