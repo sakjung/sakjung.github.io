@@ -30,7 +30,7 @@ title: Portfolio
 # Datacamp Projects
 
 <p align="center">
-  [<img src="img/datacamp-vector-logo.png" width="600" height="300"/>](https://www.datacamp.com/profile/ssangyu123)
+[<img src="img/datacamp-vector-logo.png">](https://www.datacamp.com/profile/ssangyu123)
 </p>
 
 There are more coming...
