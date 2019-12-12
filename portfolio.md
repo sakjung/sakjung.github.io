@@ -3,7 +3,7 @@ layout: page
 title: Portfolio
 ---
 
-# Data Science Projects
+# R Projects
 
 ### - [Bank Driect Marketing project](https://sakjung.github.io/bank/)
 
@@ -26,5 +26,8 @@ title: Portfolio
 **Description:**
 <br />Imported and processed **unbalanced panel Excel data** about extended energy balance of various OECD countries 
 <br />[repository](https://github.com/sakjung/extended-energy-balance-oecd.git)
+
+# Datacamp Projects
+[![DataCamp](https://www.datacamp.com/datacamp.png)](https://www.datacamp.com/profile/ssangyu123){: .center-block :}
 
 There are more coming...
