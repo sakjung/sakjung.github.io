@@ -9,7 +9,7 @@ title: Portfolio
 
 {: .box-note}
 **Description:**
-<br />Formulated optimal model and strategy for direct marketing for bank's long-term deposit
+<br />Formulated optimal model and strategy for direct marketing of bank's long-term deposit
 <br />[repository](https://github.com/sakjung/bank.git)
 
 ### - [Web Crawling - Food hygiene rating in the UK](https://sakjung.github.io/food-hygiene-rating)
@@ -20,7 +20,7 @@ title: Portfolio
 <br />Processed and modified crawled data for further analysis
 <br />[repository](https://github.com/sakjung/food-hygiene-rating.git)
 
-### - [Data engineering - extended energy balance of OECD countries](https://sakjung.github.io/extended-energy-balance-oecd/)
+### - [Data Engineering - Extended Energy Balance of OECD Countries](https://sakjung.github.io/extended-energy-balance-oecd/)
 
 {: .box-note}
 **Description:**
