@@ -3,20 +3,20 @@ layout: page
 title: Portfolio
 ---
 
-#Data Science Projects
+##Data Science Projects
 
 - [Bank Driect Marketing project](https://sakjung.github.io/bank/)
 
 {: .box-note}
 **Note:**
-Formulated optimal model and strategy for direct marketing for bank's long-term deposit
+<br />Formulated optimal model and strategy for direct marketing for bank's long-term deposit
 <br />(`CRISP-DM methodology` / `Machine Learning` / `R` / `Tableau`)
 
 - [Web Crawling - Food hygiene rating in the UK](https://sakjung.github.io/food-hygiene-rating)
 
 {: .box-note}
 **Note:**
-Crawled data from [Food hygiene rating in the UK](https://data.food.gov.uk/catalog/datasets/38dd8d6a-5ab1-4f50-b753-ab33288e3200)
+<br />Crawled data from [Food hygiene rating in the UK](https://data.food.gov.uk/catalog/datasets/38dd8d6a-5ab1-4f50-b753-ab33288e3200)
 <br /> Processed and modified crawled data for further analysis
 <br /> (`R`)
 
@@ -24,7 +24,7 @@ Crawled data from [Food hygiene rating in the UK](https://data.food.gov.uk/catal
 
 {: .box-note}
 **Note:**
-Imported and processed **unbalanced panel Excel data** about extended energy balance of various OECD countries 
+<br />Imported and processed **unbalanced panel Excel data** about extended energy balance of various OECD countries 
 <br />(`R`)
 
 There are more coming...
