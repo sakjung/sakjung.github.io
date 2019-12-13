@@ -32,7 +32,7 @@ title: Portfolio
 [<img style="float: left;" src="https://www.datacamp.com/datacamp.png" width = "300" height = "100"/>](https://www.datacamp.com/profile/ssangyu123) 
 [<img style="float: right;" src="https://vectorlogoseek.com/wp-content/uploads/2019/05/datacamp-vector-logo.png" width = "300" height = "100"/>](https://www.datacamp.com/profile/jungseoksung) 
 
-<br />
+
 ##### There are more coming...
 
 
