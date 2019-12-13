@@ -28,7 +28,7 @@ title: Portfolio
 <br />[repository](https://github.com/sakjung/extended-energy-balance-oecd.git)
 
 
-# Datacamp
+# DataCamp
 
 Python                              |                R
 :----------------------------------:|:-------------------------------:
