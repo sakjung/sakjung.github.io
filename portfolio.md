@@ -29,8 +29,8 @@ title: Portfolio
 
 
 # Datacamp
-<br />[<img src="https://www.datacamp.com/datacamp.png" width = "600" height = "200"/>](https://www.datacamp.com/profile/ssangyu123)
-<br />[<img src="https://vectorlogoseek.com/wp-content/uploads/2019/05/datacamp-vector-logo.png" width = "600" height = "200"/>](https://www.datacamp.com/profile/jungseoksung)  
+<br />[<img src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/874/s200/datacamp-logo.png" width = "300" height = "300"/>](https://www.datacamp.com/profile/ssangyu123)
+<br />[<img src="https://www.datacamp.com/datacamp-sq.png" width = "300" height = "300"/>](https://www.datacamp.com/profile/jungseoksung)  
 <br />  
 
 ##### There are more coming...
