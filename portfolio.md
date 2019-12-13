@@ -20,7 +20,7 @@ title: Portfolio
 <br />Processed and modified crawled data for further analysis
 <br />[repository](https://github.com/sakjung/food-hygiene-rating.git)
 
-### - [Data Engineering - Extended Energy Balance of OECD Countries](https://sakjung.github.io/extended-energy-balance-oecd/)
+### - [Data Wrangling - Extended Energy Balance of OECD Countries](https://sakjung.github.io/extended-energy-balance-oecd/)
 
 {: .box-note}
 **Description:**
