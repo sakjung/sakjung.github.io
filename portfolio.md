@@ -30,11 +30,7 @@ title: Portfolio
 
 # DataCamp
 
-  [<img src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/874/s200/datacamp-logo.png" width = "300" height = "300">](https://www.datacamp.com/profile/ssangyu123)
-
-<p align="center">
-  <a href=[<img src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/874/s200/datacamp-logo.png" width = "300" height = "300">](https://www.datacamp.com/profile/ssangyu123)</a> 
-<p/>
+[<img src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/874/s200/datacamp-logo.png">](https://www.datacamp.com/profile/ssangyu123)
 
 
 ##### There are more coming...
