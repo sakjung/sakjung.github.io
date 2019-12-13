@@ -29,6 +29,6 @@ title: Portfolio
 
 # Datacamp Projects
 
-[<img src="https://www.datacamp.com/datacamp.png" width = "800" height = "400"/>](https://www.datacamp.com/profile/ssangyu123)
+[<img style="float: left;" src="https://www.datacamp.com/datacamp.png" width = "800" height = "400"/>](https://www.datacamp.com/profile/ssangyu123) 
 
 There are more coming...
