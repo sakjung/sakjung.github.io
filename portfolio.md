@@ -3,7 +3,7 @@ layout: page
 title: Portfolio
 ---
 
-# R Projects
+# Projects
 
 ### - [Bank Driect Marketing project](https://sakjung.github.io/bank/)
 
