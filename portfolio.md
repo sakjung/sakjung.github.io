@@ -27,10 +27,11 @@ title: Portfolio
 <br />Imported and processed **unbalanced panel Excel data** about extended energy balance of various OECD countries 
 <br />[repository](https://github.com/sakjung/extended-energy-balance-oecd.git)
 
-# Datacamp Projects
 
-[<img src="https://www.datacamp.com/datacamp.png" width = "600" height = "200"/>](https://www.datacamp.com/profile/ssangyu123)
-[<img src="https://vectorlogoseek.com/wp-content/uploads/2019/05/datacamp-vector-logo.png" width = "600" height = "200"/>](https://www.datacamp.com/profile/jungseoksung)  
+# Datacamp
+<br />[<img src="https://www.datacamp.com/datacamp.png" width = "600" height = "200"/>](https://www.datacamp.com/profile/ssangyu123)
+<br />[<img src="https://vectorlogoseek.com/wp-content/uploads/2019/05/datacamp-vector-logo.png" width = "600" height = "200"/>](https://www.datacamp.com/profile/jungseoksung)  
+<br />  
 
 ##### There are more coming...
 
