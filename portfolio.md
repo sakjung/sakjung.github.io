@@ -29,9 +29,6 @@ title: Portfolio
 
 
 # Datacamp
-<br />[<img src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/874/s200/datacamp-logo.png" width = "300" height = "300"/>](https://www.datacamp.com/profile/ssangyu123)
-<br />[<img src="https://www.datacamp.com/datacamp-sq.png" width = "300" height = "300"/>](https://www.datacamp.com/profile/jungseoksung)  
-<br />  
 
 Python                              |                R
 :----------------------------------:|:-------------------------------:
