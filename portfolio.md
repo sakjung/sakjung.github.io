@@ -5,7 +5,7 @@ title: Portfolio
 
 # Projects
 
-### - [Bank Driect Marketing for long term deposit](https://sakjung.github.io/bank/)
+### - [Data Mining - Driect Marketing for Bank's Long Term Desposit](https://sakjung.github.io/bank/)
 
 {: .box-note}
 **Description:**
