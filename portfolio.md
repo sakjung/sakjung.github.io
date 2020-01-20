@@ -17,8 +17,7 @@ title: Portfolio
 
 {: .box-note}
 **Description:**
-<br />- Implemented statistical analysis on the mock data about customers' payday loan
-<br />- Analysed the effect of payday loan on customers' well being and customers' likelihood of experiencing adverse credit events (e.g., defaulting on another loan, making late payments on a credit card, etc.)
+<br />- Implemented statistical analysis on data about customers' payday loan
 <br />- [repository](https://github.com/sakjung/payday-loan)
 
 ### - [Food Hygiene Rating in the UK](https://sakjung.github.io/food-hygiene-rating)
