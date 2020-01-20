@@ -13,7 +13,15 @@ title: Portfolio
 <br />Presented suitable marketing strategies for direct marketing of bank's long-term deposit
 <br />[repository](https://github.com/sakjung/bank.git)
 
-### - [Food hygiene rating in the UK](https://sakjung.github.io/food-hygiene-rating)
+### - [The Effect of Payday Loan](https://sakjung.github.io/payday-loan/)
+
+{: .box-note}
+**Description:**
+<br />Implemented statistical analysis on the mock data about customers' payday loan
+<br />Analysed the effect of payday loan on customers' well being and customers' likelihood of experiencing adverse credit events (e.g., defaulting on another loan, making late payments on a credit card, etc.)
+<br />[repository](https://github.com/sakjung/payday-loan)
+
+### - [Food Hygiene Rating in the UK](https://sakjung.github.io/food-hygiene-rating)
 
 {: .box-note}
 **Description:**
