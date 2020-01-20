@@ -13,7 +13,7 @@ title: Portfolio
 <br />- Presented suitable marketing strategies for direct marketing of bank's long-term deposit
 <br />- [repository](https://github.com/sakjung/bank.git)
 
-### - [The Effect of Payday Loan](https://sakjung.github.io/payday-loan/)
+### - [Effect of Payday Loan](https://sakjung.github.io/payday-loan/)
 
 {: .box-note}
 **Description:**
