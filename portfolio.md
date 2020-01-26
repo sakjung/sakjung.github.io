@@ -9,8 +9,8 @@ title: Portfolio
 
 {: .box-note}
 **Description:** 
-<br />- Automated web scraping on the two main Korean hiphop community websites, Hiphople and Hiphopplaya, using R
-<br />- Prepared for further analysis (NLP) on Korean hiphop fans
+<br />- Automated web scraping on the two main Korean Hip hop community websites, Hiphople and Hiphopplaya, using R
+<br />- Prepared for further analysis (NLP) on Korean Hip hop fans
 
 ### - [Driect Marketing for Bank's Long Term Desposit](https://sakjung.github.io/bank/)
 
