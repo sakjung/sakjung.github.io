@@ -5,6 +5,13 @@ title: Portfolio
 
 # Projects
 
+### - [Hiphople & Hiphopplaya](https://github.com/sakjung/hhl_hhp)
+
+{: .box-note}
+**Description:** 
+<br />- Automated web scraping on the two main Korean hiphop community websites, Hiphople and Hiphopplaya, using R
+<br />- Prepared for further analysis (NLP) on Korean hiphop fans
+
 ### - [Driect Marketing for Bank's Long Term Desposit](https://sakjung.github.io/bank/)
 
 {: .box-note}
