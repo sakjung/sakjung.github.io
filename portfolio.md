@@ -11,7 +11,7 @@ title: Portfolio
 **Description:** 
 <br />- web scraping on Airbnb data for text analysis using R
 <br />- Provided various approaches to analyse textual data in listings, calendar and reviews files
-<br />- General text analysis, Sentiment analaysis, Topic Modelling
+<br />- Main Skills: Web Scraping, SQL, Parallel (batch) processing, General text analysis, Sentiment analaysis, Topic Modelling
 <br />- [repository](https://github.com/sakjung/airbnb.git)
 
 ### - [Hiphople & Hiphopplaya](https://github.com/sakjung/hhl_hhp)
@@ -20,6 +20,7 @@ title: Portfolio
 **Description:** 
 <br />- Introduced web scraping tool on two Korean Hip hop community websites, Hiphople and Hiphopplaya, using R
 <br />- Prepared for further analysis (NLP) on Korean Hip hop fans' interests
+<br />- Main Skills: Web Scraping, Data Wrangling
 
 ### - [Driect Marketing for Bank's Long Term Desposit](https://sakjung.github.io/bank/)
 
@@ -27,6 +28,7 @@ title: Portfolio
 **Description:** 
 <br />- Formulated and evaluated machine learning models to predict customer response
 <br />- Presented suitable marketing strategies for direct marketing of bank's long-term deposit
+<br />- Main Skills: Machine Learning (Decision Tree, SVM, Random Forest, Naive Bayes)
 <br />- [repository](https://github.com/sakjung/bank.git)
 
 ### - [Effect of Payday Loan](https://sakjung.github.io/payday-loan/)
@@ -35,6 +37,7 @@ title: Portfolio
 **Description:**
 <br />- Implemented statistical analysis on data about customers' payday loan
 <br />- Various visulaizations on the dataset to support statistical insights
+<br />- Main Skills: Statistical Analysis, Visualization
 <br />- [repository](https://github.com/sakjung/payday-loan.git)
 
 ### - [Food Hygiene Rating in the UK](https://sakjung.github.io/food-hygiene-rating)
@@ -43,13 +46,15 @@ title: Portfolio
 **Description:**
 <br />- Scraped data from [Food Standards Agency](https://data.food.gov.uk/catalog/datasets/38dd8d6a-5ab1-4f50-b753-ab33288e3200)
 <br />- Processed and modified crawled data for further analysis
+<br />- Main Skills: Web Scraping, Data Wrangling
 <br />- [repository](https://github.com/sakjung/food-hygiene-rating.git)
 
 ### - [Extended Energy Balance of OECD Countries](https://sakjung.github.io/extended-energy-balance-oecd/)
 
 {: .box-note}
 **Description:**
-<br />- Imported and wrangled **unbalanced panel data** about extended energy balance of various OECD countries 
+<br />- Imported and wrangled **unbalanced panel data** about extended energy balance of various OECD countries
+<br />- Main Skills: Data Wrangling
 <br />- [repository](https://github.com/sakjung/extended-energy-balance-oecd.git)
 
 
