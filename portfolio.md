@@ -9,7 +9,7 @@ title: Portfolio
 
 {: .box-note}
 **Description:** 
-<br />- web scraping on Airbnb reviews using R
+<br />- web scraping on Airbnb data for text analysis using R
 <br />- Provided various approaches to analyse textual data in listings, calendar and reviews files
 <br />- General text analysis, Sentiment analaysis, Topic Modelling
 <br />- [repository](https://github.com/sakjung/airbnb.git)
