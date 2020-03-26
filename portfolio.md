@@ -5,7 +5,7 @@ title: Portfolio
 
 # Projects
 
-### - [Airbnb](https://github.com/sakjung/airbnb)
+### - [Airbnb](https://sakjung.github.io/airbnb/)
 
 {: .box-note}
 **Description:** 
