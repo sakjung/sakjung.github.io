@@ -5,11 +5,20 @@ title: Portfolio
 
 # Projects
 
+### - [Airbnb](https://github.com/sakjung/airbnb)
+
+{: .box-note}
+**Description:** 
+<br />- web scraping on Airbnb reviews using R
+<br />- Provided various approaches to analyse textual data in listings, calendar and reviews files
+<br />- General text analysis, Sentiment analaysis, Topic Modelling
+<br />- [repository](https://github.com/sakjung/airbnb.git)
+
 ### - [Hiphople & Hiphopplaya](https://github.com/sakjung/hhl_hhp)
 
 {: .box-note}
 **Description:** 
-<br />- Automated web scraping on two Korean Hip hop community websites, Hiphople and Hiphopplaya, using R
+<br />- Introduced web scraping tool on two Korean Hip hop community websites, Hiphople and Hiphopplaya, using R
 <br />- Prepared for further analysis (NLP) on Korean Hip hop fans' interests
 
 ### - [Driect Marketing for Bank's Long Term Desposit](https://sakjung.github.io/bank/)
@@ -25,13 +34,14 @@ title: Portfolio
 {: .box-note}
 **Description:**
 <br />- Implemented statistical analysis on data about customers' payday loan
-<br />- [repository](https://github.com/sakjung/payday-loan)
+<br />- Various visulaizations on the dataset to support statistical insights
+<br />- [repository](https://github.com/sakjung/payday-loan.git)
 
 ### - [Food Hygiene Rating in the UK](https://sakjung.github.io/food-hygiene-rating)
 
 {: .box-note}
 **Description:**
-<br />- Crawled data from [Food Standards Agency](https://data.food.gov.uk/catalog/datasets/38dd8d6a-5ab1-4f50-b753-ab33288e3200)
+<br />- Scraped data from [Food Standards Agency](https://data.food.gov.uk/catalog/datasets/38dd8d6a-5ab1-4f50-b753-ab33288e3200)
 <br />- Processed and modified crawled data for further analysis
 <br />- [repository](https://github.com/sakjung/food-hygiene-rating.git)
 
