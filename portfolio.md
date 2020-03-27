@@ -10,7 +10,7 @@ title: Portfolio
 {: .box-note}
 **Description:** 
 <br />- Web scraping on Airbnb data for text analysis using R
-<br />- Provided various approaches to analyse textual data in listings, calendar and reviews files
+<br />- Provided various approaches to analyse textual data using listings, calendar and reviews files
 <br />- Main Skills: Web Scraping, SQL, Parallel (batch) processing, General text analysis, Sentiment analaysis, Topic Modelling
 <br />- [repository](https://github.com/sakjung/airbnb.git)
 
