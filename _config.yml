@@ -21,8 +21,10 @@ baseurl: ""
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  portfolio: "portfolio"
-#   Blog: ""
+  Portfolio: "portfolio"
+  Blog:
+    - Data Engineering: "data_engineering"
+    - Data Analytics: "data_analytics"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
