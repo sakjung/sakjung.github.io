@@ -1,6 +1,11 @@
 ---
-layout: page
+layout: post
 title: MSc life in the UK
+subtitle: Warwick
+#cover-img: /assets/img/path.jpg
+#image: /assets/img/path.jpg
+#share-img: /assets/img/path.jpg
+#tags: [books, test]
 comments: true
 ---
 
