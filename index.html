@@ -3,15 +3,16 @@ layout: page
 title: Sakjung World
 use-site-title: true
 ---
+//HTML
+<img src="https://yo8balltown.cafe24.com/img/main.jpg" id="bg" alt="">
 
-<img src="https://yo8balltown.cafe24.com/img/main.jpg" alt="">
+//CSS
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
 
-html,body{
-    margin:0;
-    height:100%;
-}
-img{
-  display:block;
-  width:100%; height:100%;
-  object-fit: cover;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
 }
