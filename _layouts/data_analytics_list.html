@@ -7,7 +7,7 @@ layout: page
 {% assign posts = paginator.posts | default: site.posts %}
 
 <div class="posts-list">
-  {% for post in posts.categories.data_analytics %}
+  {% for post in site.categories.data_analytics %}
   <article class="post-preview">
     <a href="{{ post.url | relative_url }}">
       <h2 class="post-title">{{ post.title }}</h2>
