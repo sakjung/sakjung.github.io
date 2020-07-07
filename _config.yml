@@ -25,7 +25,7 @@ baseurl: ""
 navbar-links:
   About Me: "aboutme"
   Portfolio: "portfolio"
-  Blog:
+  Blog: "categories"
     - Data Engineering: "data_engineering"
     - Data Analytics: "data_analytics"
 #  Resources:
