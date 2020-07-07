@@ -5,6 +5,16 @@ title: Portfolio
 
 # Projects
 
+
+### - [Edgar](https://sakjung.github.io/edgar/)
+
+{: .box-note}
+**Description:** 
+<br />- Web scraping on edgar filings (10-Q and 10-K forms) for text analysis using R
+<br />- Experimented various approaches to utilise textual data
+<br />- Main Skills: Web Scraping, SQL, Parallel (batch) processing, General text analysis, Sentiment analaysis, Topic Modelling
+<br />- [repository](https://github.com/sakjung/edgar.git)
+
 ### - [Airbnb](https://sakjung.github.io/airbnb/)
 
 {: .box-note}
