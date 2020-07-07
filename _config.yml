@@ -16,6 +16,9 @@ url: "https://sakjung.github.io"
 # baseurl should be an empty string
 baseurl: ""
 
+# --- Collection of blog categories --- #
+
+
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
