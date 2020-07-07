@@ -45,13 +45,13 @@ avatar: "img/Octocat-white.jpg"
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#bfdbc1"
+navbar-col: "#99ad89"
 navbar-text-col: "#EAEAEA"
 navbar-children-col: "#777777"
 page-col: "#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
-footer-col: "#bfdbc1"
+footer-col: "#99ad89"
 footer-text-col: "#EAEAEA"
 footer-link-col: "#777777"
 
