@@ -12,30 +12,22 @@ use-site-title: true
     position: relative;
   }
 
-  /* Bottom right text */
-  .text-block {
+ .centered {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 </style>
 
 <div class="container">
   <a href="https://sakjung.github.io/data_engineering">
     <img style="width:300px" src="https://cdn1.iconfinder.com/data/icons/data-analytics-sketchy/60/019_-_Reverse_Engineering-settings-data-analytics-512.png">
-    <div class="text-block">
-      <h4>Data Engineering</h4>
-    </div>
+    <div class="centered">Data Engineering</div>
   </a>
   <a href="https://sakjung.github.io/data_analytics">
     <img style="width:300px" src="https://cdn4.iconfinder.com/data/icons/science-and-technology-5-7/65/238-512.png">
-    <div class="text-block">
-      <h4>Data Analysis</h4>
-    </div>
+    <div class="centered">Data Analytics</div>
   </a> 
 </div>
 
