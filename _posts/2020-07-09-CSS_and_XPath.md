@@ -21,7 +21,7 @@ Web Scraping 을 할 때, `CSS` 와 `Xpath`를 사용하여 HTML이나 XML속에
 Syntax : tagname[attribute = 'attribute value']
 ```
 
-# Cheat sheet
+### Cheat sheet
 
 |**Syntax**|	**Example**|	**Description**|
 |:--------:|:---------:|:---------------:|
@@ -147,7 +147,7 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 //xpath[contains(text(), 'text1')][contains(text(), 'text2')]
 ```
 
-* - wildcard. tagname이나 attribute대신 사용될 수 있다 (어떤 것이든지 매칭시킴)
+\* - wildcard. tagname이나 attribute대신 사용될 수 있다 (어떤 것이든지 매칭시킴)
 
 //* - web page상의 모든 element들 추출
 
