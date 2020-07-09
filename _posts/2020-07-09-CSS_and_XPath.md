@@ -110,12 +110,9 @@ Xpath는 이름 그대로 XML Path를 뜻한다. HTML도 XML의 구조를 가지
 Syntax : tagname[@attribute = 'attribute value']
 ```
 
-> (e.g. \<a id="jung">바보</a>)
-
-> tagname은 "<" 다음에 나오는 이름(a)을 말한다.
-
-> attribute는 "< >" 안에서 tagename이 아닌 요소들을 일컫는다 (id). 여기서 jung을 attribute's value 라고 한다.
-
+> (e.g. \<a id="jung">바보</a>)\
+> tagname은 "<" 다음에 나오는 이름(a)을 말한다.\
+> attribute는 "< >" 안에서 tagename이 아닌 요소들을 일컫는다 (id). 여기서 jung을 attribute's value 라고 한다.\
 > text는 > 와 < 사이에 있는 것을 일컫는다 (바보)
 
 
