@@ -8,10 +8,9 @@ title: CSS and XPath Syntax 간단 요약 (Cheat Sheet)
 categories: data_engineering
 comments: true
 ---
-
 <style>
-body {
-text-align: justify}
+	body {
+	text-align: justify}
 </style>
 
 Web Scraping 을 할 때, `CSS` 와 `Xpath`를 사용하여 HTML이나 XML속에 존재하는 원하는 데이터의 위치를 찾아 추출할 수 있다. `Selenium`, Python 에서 주로 사용하는 `Scrapy`나 `BeautifulSoup`, R에서 주로 사용하는 `Rvest` 등등, 다양한 Web Scraping 상황에서 유용하게 쓰일 수 있다. 본 포스팅에서는 `CSS` 와 `Xpath` 사용시의 syntax에 대해서 알아보고자 한다. **참고로 `CSS`가 `Xpath` 보다 더 간결하고 퍼포먼스가 좋기 때문에 `CSS` 사용이 더 권장된다.**
