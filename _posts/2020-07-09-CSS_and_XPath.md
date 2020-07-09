@@ -40,7 +40,7 @@ Syntax : tagname[attribute = 'attribute value']
 |element+element	|div + p	|<div> element들 바로 다음에 위치한 모든 <p> element들 추출|
 |element1~element2	|p ~ ul	|<p> element들 바로 앞에 존재하는 모든 <ul> element들 추출|
 |[attribute]|	[target]	|target 이라는 attribute을 가진 모든 element들 추출|
-|[attribute=value]	|[target=\_blank] target="\_blank" 인 모든 element들 추출|
+|[attribute=value]	|[target=\_blank] |target="\_blank" 인 모든 element들 추출|
 |[attribute~=value]	|[title~=flower]	|title attribute의 value가 "flower" 라는 단어를 포함하고 있는 모든 element들 추출|
 |[attribute\|=value]	|[lang\|=en]	|lang attribute의 value가 "en" 이라는 단어로 시작하는 모든 element들 추출 (attribute value는 완전한 단어여야 함 e.g. en 혹은 en-US 등등) |
 |[attribute^=value]	|a[href^="https"]	|href attribute의 value가 "https" 라는 단어로 시작하는 모든 \<a> element들 추출 (attribute value는 완전한 단어일 필요 없음 e.g. httpsavage)|
