@@ -9,6 +9,11 @@ categories: data_engineering
 comments: true
 ---
 
+<style>
+body {
+text-align: justify}
+</style>
+
 Web Scraping 을 할 때, `CSS` 와 `Xpath`를 사용하여 HTML이나 XML속에 존재하는 원하는 데이터의 위치를 찾아 추출할 수 있다. `Selenium`, Python 에서 주로 사용하는 `Scrapy`나 `BeautifulSoup`, R에서 주로 사용하는 `Rvest` 등등, 다양한 Web Scraping 상황에서 유용하게 쓰일 수 있다. 본 포스팅에서는 `CSS` 와 `Xpath` 사용시의 syntax에 대해서 알아보고자 한다. **참고로 `CSS`가 `Xpath` 보다 더 간결하고 퍼포먼스가 좋기 때문에 `CSS` 사용이 더 권장된다.**
 
 *****
@@ -37,10 +42,10 @@ Syntax : tagname[attribute = 'attribute value']
 |[attribute]|	[target]	|target 이라는 attribute을 가진 모든 element들 추출|
 |[attribute=value]	|[target=\_blank] target="\_blank" 인 모든 element들 추출|
 |[attribute~=value]	|[title~=flower]	|title attribute의 value가 "flower" 라는 단어를 포함하고 있는 모든 element들 추출|
-|[attribute|=value]	|[lang|=en]	|lang attribute의 value가 "en" 이라는 단어로 시작하는 모든 element들 추출 (attribute value는 완전한 단어여야 함 e.g. en 혹은 en-US 등등) |
-|[attribute^=value]	|a[href^="https"]	|href attribute의 value가 "https" 라는 단어로 시작하는 모든 <a> element들 추출 (attribute value는 완전한 단어일 필요 없음 e.g. httpsavage)|
-|[attribute$=value]	|a[href$=".pdf"]	|href attribute의 value가 ".pdf" 라는 단어로 끝나는 모든 <a> element들 추출 |
-|[attribute*=value]	|a[href*="qatest"]	|href attribute의 value가 "qatest" 라는 단어를 포함하는 모든 <a> element들 추출 |
+|[attribute\|=value]	|[lang\|=en]	|lang attribute의 value가 "en" 이라는 단어로 시작하는 모든 element들 추출 (attribute value는 완전한 단어여야 함 e.g. en 혹은 en-US 등등) |
+|[attribute^=value]	|a[href^="https"]	|href attribute의 value가 "https" 라는 단어로 시작하는 모든 \<a> element들 추출 (attribute value는 완전한 단어일 필요 없음 e.g. httpsavage)|
+|[attribute$=value]	|a[href$=".pdf"]	|href attribute의 value가 ".pdf" 라는 단어로 끝나는 모든 \<a> element들 추출 |
+|[attribute*=value]	|a[href*="qatest"]	|href attribute의 value가 "qatest" 라는 단어를 포함하는 모든 \<a> element들 추출 |
 
 ### Pseudo-classes
 
@@ -50,50 +55,50 @@ Syntax : tagname[attribute = 'attribute value']
 
 1. 하나의 elemet에 다수의 class가 존재할 경우 (아래 예시의 경우 expand 와 icon)
 
-```
-Html Code : <label class='expand icon'>데이터</label>
+	```
+	Html Code : <label class='expand icon'>데이터</label>
 
-Css selector value : .expand.icon
-Css selector value : [class='expand'] [class='icon']
-```
+	Css selector value : .expand.icon
+	Css selector value : [class='expand'] [class='icon']
+	```
 
 2. Id로 추출하는 경우
 
-```
-Html Code : <label id='fourth'>데이터</label>
+	```
+	Html Code : <label id='fourth'>데이터</label>
 
-Css selector value : #fourth
-```
+	Css selector value : #fourth
+	```
 
 3. Tagname으로 추출하는 경우
 
-```
-Html Code : <label id='fourth'>데이터</label>
+	```
+	Html Code : <label id='fourth'>데이터</label>
 
-Css selector value : label
-```
+	Css selector value : label
+	```
 
 4. 원하는 element가 유니크 하지 않을 때, 즉 parent가 존재할 때
 
-```
-Html Code : <div id='abc' class='column'>
-				      <label id='fourth' class='expand'>데이터</label>
-			      </div>
+	```
+	Html Code : <div id='abc' class='column'>
+					      <label id='fourth' class='expand'>데이터</label>
+				      </div>
 
-Css with class : .column.expand
-Css with id : .abc.fourth
-Css with tagname : div label
-Css with mix 1: div.column#fourth
-Css with mix 1: #abc label.expand
-```
+	Css with class : .column.expand
+	Css with id : .abc.fourth
+	Css with tagname : div label
+	Css with mix 1: div.column#fourth
+	Css with mix 1: #abc label.expand
+	```
 
 5. 소문자 대문자를 무시하고 싶을 때 (i의 사용)
 
-```
-Html Code : <div id='abcDE' class='column'>
+	```
+	Html Code : <div id='abcDE' class='column'>
 
-Css with class : div[id='abcde' i]
-```
+	Css with class : div[id='abcde' i]
+	```
 
 ******
   
@@ -114,17 +119,17 @@ Xpath에는 두개의 종류가 있다:
 
 1. Absolute Xpath
 
-슬래쉬 한개는 HTML의 첫번째 node(tag)만을 select한다. 
-```
-Syntax : /tagname[@attribute = 'attribute value']
-```
+	슬래쉬 한개는 HTML의 첫번째 node(tag)만을 select한다. 
+	```
+	Syntax : /tagname[@attribute = 'attribute value']
+	```
 
 2. Relative Xpath
 
-슬래쉬 두개는 web page의 어떤 node(tag)든지 다 select 한다. 우리는 이 Xpath를 살펴보자.
-```
-Syntax : //tagname[@attribute = 'attribute value']
-```
+	슬래쉬 두개는 web page의 어떤 node(tag)든지 다 select 한다. 우리는 이 Xpath를 살펴보자.
+	```
+	Syntax : //tagname[@attribute = 'attribute value']
+	```
 
 ### Cheat sheet
 
@@ -161,137 +166,137 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 
 1. tagname의 활용
 
-```
-<html>
-	<body>
-		<div id="pancakes">
-			<button type="button">데이터</button><br><br>
-		</div>
-	</body>
-</html>
+	```
+	<html>
+		<body>
+			<div id="pancakes">
+				<button type="button">데이터</button><br><br>
+			</div>
+		</body>
+	</html>
 
-Syntax for Xpath
-데이터: //button
-```
+	Syntax for Xpath
+	데이터: //button
+	```
 
 2. index의 활용
 
-```
-<html>
-	<body>
-		<div id="pancakes">
-			<button type="button">데이터1</button><br><br>
-			<button type="button">데이터2</button><br><br>
-			<button type="button">데이터3</button><br><br>
-		</div>
-	</body>
-</html>
+	```
+	<html>
+		<body>
+			<div id="pancakes">
+				<button type="button">데이터1</button><br><br>
+				<button type="button">데이터2</button><br><br>
+				<button type="button">데이터3</button><br><br>
+			</div>
+		</body>
+	</html>
 
-Syntax for Xpath
-데이터1: //button[1]
-데이터2: //button[2]
-데이터3: //button[3]
-```
+	Syntax for Xpath
+	데이터1: //button[1]
+	데이터2: //button[2]
+	데이터3: //button[3]
+	```
 
 3. attribute의 활용
 
-```
-<html>
-	<body>
-		<div id="pancakes">
-			<button type="button">데이터1</button><br><br>
-			<button type="button" name='데이터2'>데이터2</button><br><br>
-			<button type="button" name='데이터3' id="1">데이터3</button><br><br>
-		</div>
-		<div id="pancakes">
-			<button type="button">데이터4</button><br><br>
-			<button type="button">데이터5</button><br><br>
-			<button type="button">데이터6</button><br><br>
-		</div>
-	</body>
-</html>
+	```
+	<html>
+		<body>
+			<div id="pancakes">
+				<button type="button">데이터1</button><br><br>
+				<button type="button" name='데이터2'>데이터2</button><br><br>
+				<button type="button" name='데이터3' id="1">데이터3</button><br><br>
+			</div>
+			<div id="pancakes">
+				<button type="button">데이터4</button><br><br>
+				<button type="button">데이터5</button><br><br>
+				<button type="button">데이터6</button><br><br>
+			</div>
+		</body>
+	</html>
 
-Syntax for Xpath
-데이터2: //button[@name='banana']
-데이터3: //button[@name='banana'][@id='1']
-```
+	Syntax for Xpath
+	데이터2: //button[@name='banana']
+	데이터3: //button[@name='banana'][@id='1']
+	```
 
 4. 부모-자식 관계의 활용
 
-```
-<html>
-	<body>
-		<div id="pancakes">
-			<button type="button">데이터1</button><br><br>
-			<button type="button">데이터2</button><br><br>
-			<button type="button">데이터3</button><br><br>
-		</div>
-		<div id="fruits">
-			<button type="button">데이터4</button><br><br>
-			<button type="button">데이터5</button><br><br>
-			<button type="button">데이터6</button><br><br>
-		</div>
-	</body>
-</html>
+	```
+	<html>
+		<body>
+			<div id="pancakes">
+				<button type="button">데이터1</button><br><br>
+				<button type="button">데이터2</button><br><br>
+				<button type="button">데이터3</button><br><br>
+			</div>
+			<div id="fruits">
+				<button type="button">데이터4</button><br><br>
+				<button type="button">데이터5</button><br><br>
+				<button type="button">데이터6</button><br><br>
+			</div>
+		</body>
+	</html>
 
-Syntax for Xpath
-데이터2: //div[@id='pancakes']/button[2]
-```
+	Syntax for Xpath
+	데이터2: //div[@id='pancakes']/button[2]
+	```
 
 5. group index의 활용
 
-group index는 모든 매칭되는 element들을 리스트에 넣고 각각에게 index를 부여한다. 그러므로 같은 매칭이 서로 구분 될 수 있게끔 한다. 아래의 예시에서는 모든 button을 매칭되는 element로 간주하고 총 여섯개의 button들에 대해 index를 부여한다고 볼 수 있다.
+	group index는 모든 매칭되는 element들을 리스트에 넣고 각각에게 index를 부여한다. 그러므로 같은 매칭이 서로 구분 될 수 있게끔 한다. 아래의 예시에서는 모든 button을 매칭되는 element로 간주하고 총 여섯개의 button들에 대해 index를 부여한다고 볼 수 있다.
 
-```
-<html>
-	<body>
-		<div id="fruits"><br><br><br>
-			<button type="button">데이터1</button><br><br>
-			<button type="button">데이터2</button><br><br>
-			<button type="button">데이터3</button><br><br>
-		</div>
-		<div id="fruits">
-			<button type="button">데이터4</button><br><br>
-			<button type="button">데이터5</button><br><br>
-			<button type="button">데이터6</button><br><br>
-		</div>
-	</body>
-</html>
+	```
+	<html>
+		<body>
+			<div id="fruits"><br><br><br>
+				<button type="button">데이터1</button><br><br>
+				<button type="button">데이터2</button><br><br>
+				<button type="button">데이터3</button><br><br>
+			</div>
+			<div id="fruits">
+				<button type="button">데이터4</button><br><br>
+				<button type="button">데이터5</button><br><br>
+				<button type="button">데이터6</button><br><br>
+			</div>
+		</body>
+	</html>
 
-Syntax for Xpath
-데이터5: (//button)[5]
-```
+	Syntax for Xpath
+	데이터5: (//button)[5]
+	```
 
 6. text function의 활용
 
-```
-<button type="button">데이터1</button><br><br>
+	```
+	<button type="button">데이터1</button><br><br>
 
-xpath with text : //button[text()='데이터1']
+	xpath with text : //button[text()='데이터1']
 
-번외
-//button[text()] 혹은 //button/text(): 텍스트를 가지는 모든 element들 추출
-```
+	번외
+	//button[text()] 혹은 //button/text(): 텍스트를 가지는 모든 element들 추출
+	```
 
 7. contains function의 활용
 
-```
-<html>
-<body>
-	<div id="fruit"><br><br><br><br><br><br><br><br><br><br><br>
-		<button type="button">데이터 Blue</button><br><br>
-		<button type="button" >데이터2</button><br><br>
-		<button type="button">데이터3</button><br><br>
-		<button type="button">데이터4</button><br><br>
-		<button type="button">데이터5</button><br><br>
-		</div>
-	</body>
-</html>
+	```
+	<html>
+	<body>
+		<div id="fruit"><br><br><br><br><br><br><br><br><br><br><br>
+			<button type="button">데이터 Blue</button><br><br>
+			<button type="button" >데이터2</button><br><br>
+			<button type="button">데이터3</button><br><br>
+			<button type="button">데이터4</button><br><br>
+			<button type="button">데이터5</button><br><br>
+			</div>
+		</body>
+	</html>
 
-Syntax for Xpath
-데이터 Blue: //button[contains(text(),'Blue')]
-데이터2:  //button[contains(text(),'2')]
+	Syntax for Xpath
+	데이터 Blue: //button[contains(text(),'Blue')]
+	데이터2:  //button[contains(text(),'2')]
 
-attribute 사용시 예제
-e.g. //button[contains(@type,'but')]
-```
+	attribute 사용시 예제
+	e.g. //button[contains(@type,'but')]
+	```
