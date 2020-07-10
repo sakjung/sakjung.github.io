@@ -9,43 +9,44 @@ use-site-title: true
 <style>
   /* Three image containers (use 25% for four, and 50% for two, etc) */
   .column {
-    float: left;
-    width: 50%;
-    padding: 20px;
-    display:inline-block;
+    display: inline-block;
+/*     border: 1px dotted gray; */
+    margin: 20px; /* adjust as needed */
+  }
+ 
+  div a img {
     vertical-align: top;
-  }
-
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+ }
  
   .centered {
     text-align: center;
   }
 </style>
 
-<!-- 
-"https://yo8balltown.cafe24.com/img/main.jpg" -->
-
-<div class="row">
-  <div class="column">
-    <a href="https://sakjung.github.io/data_engineering">
-      <img src="https://cdn4.iconfinder.com/data/icons/science-and-technology-5-7/65/238-512.png" alt="DE" style="width:100%">
-    </a>
-    <div class="centered" face="Arial" size="+5">Data Engineering</div>
-  </div>
-  <div class="column">
-    <a href="https://sakjung.github.io/music">
-      <img src="https://cdn1.iconfinder.com/data/icons/essentials-iso-2-flat/74/064_-_Music-512.png" alt="Music" style="width:100%">
-    </a>
-    <div class="centered" face="Arial" size="+5">Music</div>
-  </div>
+<div class="column">
+  <a href="https://sakjung.github.io/data_engineering">
+    <img src="https://cdn4.iconfinder.com/data/icons/science-and-technology-5-7/65/238-512.png" alt="DE" style="width:100%">
+  </a>
+  <font class="centered" face="Arial" size="+10">Data Engineering</div>
+</div>
+<div class="column">
+  <a href="https://sakjung.github.io/music">
+    <img src="https://cdn1.iconfinder.com/data/icons/essentials-iso-2-flat/74/064_-_Music-512.png" alt="Music" style="width:100%">
+  </a>
+  <font class="centered" face="Arial" size="+10">Music</div>
 </div>
 
+
+<!-- /* Clear floats after image containers */
+/*   .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+ -->
+
+<!-- 
+"https://yo8balltown.cafe24.com/img/main.jpg" -->
 
 <!-- <div class="container">
   <a href="https://sakjung.github.io/data_engineering">
