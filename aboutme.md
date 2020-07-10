@@ -3,11 +3,11 @@ layout: page
 title: About me
 ---
 
-My name is Jung Seok Sung. I am currently studying MSc Business Analytics at Warwick Business School. This will be my first step as a data analyst / data scientist in my future career. The following is the list about me so have a look!:
+My name is Jung Seok Sung. I am currently studying MSc Business Analytics at Warwick Business School. I am looking forward to have a career as a data engineer / data analyst after graduation. The following is the list about me so have a look!:
 
 - Korean
 - `Hip-Hop` and `R&B` addicted
-- Overwatch `Grand Master`, most 3 with `Mei / Anna / Zen`. Then I quitted **THANKS TO** the `Aim Hack Crisis` around season 4 and 5...If you know, then you know
+- Overwatch `Grand Master`, most 3 picks with `Mei / Anna / Zen`
 - I am `孤独のグルメ`...
 - I will write more if I have got something pops up on my mind
 
