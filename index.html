@@ -11,25 +11,37 @@ use-site-title: true
     text-align: center;
   }
  
-  img {
-    display:inline-block; 
+  .column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  }
+
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+/*     height: 200px; */
   }
  
-  a {
-   float: left;
-   width: 50%;
- }
 </style>
 
-
-<a href="https://sakjung.github.io/data_engineering">
-  <img src="https://cdn4.iconfinder.com/data/icons/science-and-technology-5-7/65/238-512.png" alt="Data Engineering" style="width:100%">
-</a>
-<font class="centered" face="Arial" size="+2">Data Engineering</font>
-<a href="https://sakjung.github.io/music">
-  <img src="https://cdn1.iconfinder.com/data/icons/essentials-iso-2-flat/74/064_-_Music-512.png" alt="Music" style="width:100%">
-</a>
-<font class="centered" face="Arial" size="+2">Music</font>
+<div class="row">
+  <div class="column">
+    <a href="https://sakjung.github.io/data_engineering">
+      <img src="https://cdn4.iconfinder.com/data/icons/science-and-technology-5-7/65/238-512.png" alt="Data Engineering" style="width:100%">
+    </a>
+    <font class="centered" face="Arial" size="+3">Data Engineering</font>
+  </div>
+  <div class="column">
+    <a href="https://sakjung.github.io/music">
+      <img src="https://cdn1.iconfinder.com/data/icons/essentials-iso-2-flat/74/064_-_Music-512.png" alt="Music" style="width:100%">
+    </a>
+    <font class="centered" face="Arial" size="+3">Music</font>
+  </div>
+</div
+ 
 
 <!-- <div class="column">
   <a href="https://sakjung.github.io/data_engineering">
