@@ -7,26 +7,46 @@ use-site-title: true
  -->
 
 <style>
-  /* Three image containers (use 25% for four, and 50% for two, etc) */
-  .column {   
-    width: 300px;
-    height: 300px;   
-/*     display: inline-block;
-    width: 50%;
-    border: 1px dotted gray; */
-    margin: 20px;
-  }
- 
-  .column img {
-   width: 100%;
-   height: auto;
-/*    vertical-align: top; */
- }
- 
   .centered {
     text-align: center;
   }
+ 
+  #content a img {
+    display: inline;
+    margin: 10px;
+    padding: 20px;
+    vertical-align:middle;
+    width:200px;
+  }
+  #content {
+      display: block;
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+      top: 90px;
+      height: auto;
+      max-width: auto;
+      overflow-y: hidden;
+      overflow-x:auto;
+      word-wrap:normal;
+      white-space:nowrap;
+  }
 </style>
+
+<div id="content">
+  <a href="https://sakjung.github.io/data_engineering">
+    <img src="https://cdn4.iconfinder.com/data/icons/science-and-technology-5-7/65/238-512.png" alt="Data Engineering">
+  </a>
+  <font class="centered" face="Arial" size="+5">Data Engineering</font>
+  <a href="https://sakjung.github.io/music">
+    <img src="https://cdn1.iconfinder.com/data/icons/essentials-iso-2-flat/74/064_-_Music-512.png" alt="Music">
+  </a>
+  <font class="centered" face="Arial" size="+5">Music</font>
+</div>
+
+
+
+
 
 <div class="column">
   <a href="https://sakjung.github.io/data_engineering">
@@ -40,6 +60,7 @@ use-site-title: true
   </a>
   <font class="centered" face="Arial" size="+5">Music</font>
 </div>
+
 
 <!-- /* Clear floats after image containers */
 
