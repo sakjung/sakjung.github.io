@@ -27,7 +27,7 @@ navbar-links:
   Portfolio: "portfolio"
   Blog:
     - Data Engineering: "data_engineering"
-    - Data Analytics: "data_analytics"
+    - Music: "music"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
