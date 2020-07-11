@@ -300,3 +300,18 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 	attribute 사용시 예제
 	e.g. //button[contains(@type,'but')]
 	```
+
+******
+
+**Reference List**
+
+- `CSS`
+
+[w3schools-CSS](https://www.w3schools.com/css/default.asp)  
+[chercher.tech-CSS](https://chercher.tech/python/css-selector-selenium-python)  
+
+- `Xpath`
+
+[w3schools-Xpath](https://www.w3schools.com/xml/xpath_intro.asp)  
+[chercher.tech-Xpath](https://chercher.tech/java/relative-xpath-selenium-webdriver)
+
