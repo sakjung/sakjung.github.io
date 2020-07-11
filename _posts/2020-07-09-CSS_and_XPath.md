@@ -13,7 +13,7 @@ comments: true
 	text-align: justify}
 </style>
 
-Web Scraping 을 할 때, `CSS` 와 `Xpath`를 사용하여 HTML이나 XML속에 존재하는 원하는 데이터의 위치를 찾아 추출할 수 있다. `Selenium`, Python 에서 주로 사용하는 `Scrapy`나 `BeautifulSoup`, R에서 주로 사용하는 `Rvest` 등등, 다양한 Web Scraping 상황에서 유용하게 쓰일 수 있다. 본 포스팅에서는 `CSS` 와 `Xpath` 사용시의 syntax에 대해서 알아보고자 한다. **참고로 `CSS`가 `Xpath` 보다 더 간결하고 퍼포먼스가 좋기 때문에 `CSS` 사용이 더 권장된다.**
+Web Scraping 을 할 때, `CSS` 와 `Xpath`를 사용하여 HTML이나 XML속에 존재하는 원하는 데이터의 위치를 찾아 추출할 수 있다. `Selenium`, Python 에서 주로 사용하는 `Scrapy`나 `BeautifulSoup` 그리고 R에서 주로 사용하는 `Rvest` 등등, 다양한 Web Scraping 상황에서 필수적이라고 할 수 있다. 이 때, `CSS` 와 `Xpath` Syntax가 헷갈리거나 가물가물한 경우가 종종 생길 수 있다. 본 포스팅에서는 참고하기 용이 하게끔 다양한 syntax들을 간략하게 정리 해 보았다. **참고로 `CSS`가 `Xpath` 보다 더 간결하고 퍼포먼스가 좋기 때문에 `CSS` 사용이 더 권장된다.**
 
 *****
 
