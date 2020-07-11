@@ -48,7 +48,7 @@ Syntax : tagname[attribute = 'attribute value']
 
 ### Pseudo-classes
 
-이 syntax들은 다양한 특수 상황을 이용해서 elemet들을 추출하고 싶을때 사용할 수 있다. 양이 너무 많으므로 [`w3schools`](https://www.w3schools.com/cssref/css_selectors.asp)를 참고하기 바란다.
+이 syntax들은 다양한 특수 상황을 이용해서 elemet들을 추출하고 싶을때 사용할 수 있다. 양이 너무 많으므로 [`w3schools`](https://www.w3schools.com/css/css_pseudo_classes.asp)를 참고하기 바란다.
 
 ### Examples  
 
