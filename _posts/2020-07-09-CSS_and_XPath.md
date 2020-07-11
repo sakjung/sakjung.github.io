@@ -9,7 +9,7 @@ categories: data_engineering
 comments: true
 ---
 <style>
-	body {
+	* {
 	text-align: justify}
 </style>
 
