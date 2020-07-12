@@ -13,7 +13,15 @@ comments: true
 	text-align: justify}
 </style>
 
-Web Scraping 을 할 때, `CSS` 와 `Xpath`를 사용하여 HTML이나 XML속에 존재하는 원하는 데이터의 위치를 찾아 추출할 수 있다. 주로 `Selenium`, Python 에서 주로 사용하는 `Scrapy`나 `BeautifulSoup` 그리고 R에서 주로 사용하는 `Rvest` 등등을 이용해서 Web Page에 대한 직접적 parsing을 통한 Web Scraping을 하고자 할 때 필요하다. 이 때, `CSS` 와 `Xpath` syntax가 헷갈리거나 가물가물한 경우가 종종 생길 수 있다. 본 포스팅에서는 참고하기 용이 하게끔 다양한 syntax들을 간략하게 정리 해 보았다. **참고로 `CSS`가 `Xpath` 보다 더 간결하고 퍼포먼스가 좋기 때문에 `CSS` 사용이 더 권장된다.**
+Web Scraping 을 할 때, `CSS` 와 `Xpath`를 사용하여 HTML이나 XML속에 존재하는 원하는 데이터의 위치를 찾아 추출할 수 있다. 주로 `Selenium`, Python 에서 주로 사용하는 `Scrapy`나 `BeautifulSoup` 그리고 R에서 주로 사용하는 `Rvest` 등등을 이용해서 Web Page에 대한 직접적 parsing을 통한 Web Scraping을 하고자 할 때 필요하다. 이 때, `CSS` 와 `Xpath` syntax가 헷갈리거나 가물가물한 경우가 종종 생길 수 있다. 본 포스팅에서는 참고하기 용이 하게끔 자주 쓰이는 syntax들을 간략하게 정리 해 보았다. **참고로 `CSS`가 `Xpath` 보다 더 간결하고 퍼포먼스가 좋기 때문에 `CSS` 사용이 더 권장된다.**
+
+## Data Dictionary
+
+> (e.g. \<a id="jung">바보</a>)  
+> `element`는 document (Web Scraping 상황에서는 통상적으로 Web Page)에 존재하는 node 일컫는다 (\<a id="jung">바보</a>)  
+> `tagname`은 "<" 다음에 나오는 node의 이름(a)을 말한다 
+> `attribute`는 "< >" 안에서 tagename이 아닌 요소들을 일컫는다 (id). 여기서 jung을 `attribute's value` 라고 한다
+> `text`는 > 와 < 사이에 있는 것을 일컫는다 (바보)  
 
 *****
 
@@ -109,12 +117,6 @@ Xpath는 이름 그대로 XML Path를 뜻한다. HTML도 XML의 구조를 가지
 Syntax : tagname[@attribute = 'attribute value']
 ```
 
-> (e.g. \<a id="jung">바보</a>)  
-> tagname은 "<" 다음에 나오는 이름(a)을 말한다.  
-> attribute는 "< >" 안에서 tagename이 아닌 요소들을 일컫는다 (id). 여기서 jung을 attribute's value 라고 한다.  
-> text는 > 와 < 사이에 있는 것을 일컫는다 (바보)
-
-
 Xpath에는 두개의 종류가 있다:
 
 1. Absolute Xpath
@@ -152,15 +154,16 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 //xpath[contains(text(), 'text1')][contains(text(), 'text2')]
 ```
 
-\* - wildcard. tagname이나 attribute대신 사용될 수 있다 (어떤 것이든지 매칭시킴)
-
-//* - web page상의 모든 element들 추출
-
-//div/* - div tag안의 모든 element들 추출
-
-//input[@\*] - input tag와 최소 하나의 attribute를 가지는 모든 element들 추출. attribute value는 존재하든 안하든 상관 없음.
-
-//*[@*] - 최소 하나의 attribute를 가지는 모든 element들 추출
+|**Syntax**|**Example**|**Description**|
+|:--------:|:---------:|:---------------:|
+|\*|\*| wildcard. tagname이나 attribute대신 사용될 수 있다 (어떤 element node든지 매칭시킴 i.e. 모든 것)|
+|@\* | @\* | 어떤 attribute node 든지 매칭 |
+|node()|node()| 어떤 종류의 어떤 node든지 (element node 든지 attribute node든지) 매칭|
+|//\* |//\* | web page상의 모든 element들 추출|
+|//tagname/* |//div/* | div tag안의 모든 element들 추출|
+| //tagname \| //tagname | //title \| //price | web page상의 모든 title element와 price element 추출 | 
+|//tagname[@\*] | //input[@\*] | input tag와 최소 하나의 attribute를 가지는 모든 element들 추출. attribute value는 존재하든 안하든 상관 없음|
+|//\*[@\*] | //\*[@\*] | 최소 하나의 attribute를 가지는 모든 element들 추출|
 
 ### Examples
 
