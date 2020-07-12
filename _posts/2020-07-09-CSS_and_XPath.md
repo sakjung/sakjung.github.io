@@ -19,9 +19,9 @@ Web Scraping 을 할 때, `CSS` 와 `Xpath`를 사용하여 HTML이나 XML속에
 
 > (e.g. \<a id="jung">바보</a>)  
 > `element`는 document (Web Scraping 상황에서는 통상적으로 Web Page)에 존재하는 node 일컫는다 (\<a id="jung">바보</a>)  
-> `tagname`은 "<" 다음에 나오는 node의 이름(a)을 말한다 
-> `attribute`는 "< >" 안에서 tagename이 아닌 요소들을 일컫는다 (id). 여기서 jung을 `attribute's value` 라고 한다
-> `text`는 > 와 < 사이에 있는 것을 일컫는다 (바보)  
+> `tagname`은 "<" 다음에 나오는 node의 이름(a)을 말한다  
+> `attribute`는 "< >" 안에서 tagename이 아닌 요소들을 일컫는다 (id). 여기서 jung을 `attribute's value` 라고 한다  
+> `text`는 > 와 < 사이에 있는 것을 일컫는다 (바보)   
 
 *****
 
