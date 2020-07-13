@@ -13,7 +13,7 @@ layout: null
 
 body {
   font-family: 'Do Hyeon', sans-serif;
-  font-size: 22px;
+  font-size: 25px;
   color: #404040;
   position: relative;
   background-color: {{ site.page-col }};
