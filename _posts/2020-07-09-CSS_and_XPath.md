@@ -154,7 +154,6 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 //xpath[contains(text(), 'text1')][contains(text(), 'text2')]
 ```
 <br>
-
 |**Syntax**|**Example**|**Description**|
 |:--------:|:---------:|:---------------:|
 |\*|\*| wildcard. tagname이나 attribute대신 사용될 수 있다 |
