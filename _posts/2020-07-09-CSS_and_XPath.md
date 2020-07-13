@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS & XPath Syntax 간단 요약
+title: CSS와 XPath Syntax 간단 요약
 subtitle: Cheat sheet
 #cover-img: /assets/img/path.jpg
 #image: /assets/img/path.jpg
