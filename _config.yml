@@ -4,7 +4,7 @@
 title: Sakjung World
 
 # Short description of your site
-description: Real Busan Sanai
+# description: Real Busan Sanai
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -111,7 +111,7 @@ url-pretty: "sakjung.com"  # eg. "deanattali.com/beautiful-jekyll"
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-172520681-1"
 
 # Google Tag Manager ID
 #gtm: ""
