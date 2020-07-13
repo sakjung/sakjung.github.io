@@ -224,7 +224,7 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 	데이터3: //button[@name='banana'][@id='1']
 	```
 
-4. 부모-자식 관계의 활용
+4. parent-child 관계의 활용
 
 	```
 	<html>
