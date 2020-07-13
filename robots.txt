@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-User-agent: BadBot
-Disallow: /
 
 Sitemap: https://sakjung.github.io/sitemap.xml
