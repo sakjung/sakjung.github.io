@@ -157,13 +157,12 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 
 |**Syntax**|**Example**|**Description**|
 |:--------:|:---------:|:---------------:|
-|\*|\*| wildcard. tagname이나 attribute대신 사용될 수 있다 (어떤 element node든지 매칭시킴 i.e. 모든 것)|
-|@\* | @\* | 어떤 attribute node 든지 매칭 |
-|node()|node()| 어떤 종류의 어떤 node든지 (element node 든지 attribute node든지) 매칭|
+|\*|\*| wildcard. tagname이나 attribute대신 사용될 수 있다 |
+|@\* | @\* | 어떤 attribute node 든지 모두 매칭 |
 |//\* |//\* | web page상의 모든 element들 추출|
 |//tagname/* |//div/* | div tag안의 모든 element들 추출|
 | //tagname \| //tagname | //title \| //price | web page상의 모든 title element와 price element 추출 | 
-|//tagname[@\*] | //input[@\*] | input tag와 최소 하나의 attribute를 가지는 모든 element들 추출. attribute value는 존재하든 안하든 상관 없음|
+|//tagname[@\*] | //input[@\*] | input tag와 최소 하나의 attribute를 가지는 모든 element들 추출 (attribute value는 존재하든 안하든 상관 없음)|
 |//\*[@\*] | //\*[@\*] | 최소 하나의 attribute를 가지는 모든 element들 추출|
 
 ### Examples
