@@ -13,7 +13,7 @@ comments: true
 	text-align: justify}
 </style>
 
-Web Scraping 을 할 때, `CSS` 와 `Xpath`를 사용하여 HTML이나 XML속에 존재하는 원하는 데이터의 위치를 찾아 추출할 수 있다. 주로 `Selenium`, Python의 `Scrapy`나 `BeautifulSoup` 그리고 R의 `Rvest` 등을 이용해서 Web Page에 대한 직접적 parsing을 통한 Web Scraping을 하고자 할 때 필요하다. 이 때, `CSS` 와 `Xpath` syntax가 헷갈리거나 가물가물한 경우가 종종 생길 수 있다. 본 포스팅에서는 참고하기 용이 하게끔 자주 쓰이는 syntax들을 간략하게 정리 해 보았다.<br><br>
+Web Scraping 을 할 때, `CSS` 와 `Xpath`를 사용하여 HTML이나 XML속에 존재하는 원하는 데이터의 위치를 찾아 추출할 수 있다. 주로 Selenium, Python의 Scrapy나 BeautifulSoup 그리고 R의 Rvest 등을 이용해서 Web Page에 대한 직접적 parsing을 통한 Web Scraping을 하고자 할 때 필요하다. 이 때, `CSS` 와 `Xpath` syntax가 헷갈리거나 가물가물한 경우가 종종 생길 수 있다. 본 포스팅에서는 참고하기 용이 하게끔 자주 쓰이는 syntax들을 간략하게 정리 해 보았다.<br><br>
 **참고로 `CSS`가 `Xpath` 보다 더 간결하고 퍼포먼스가 좋기 때문에 `CSS` 사용이 더 권장된다.**
 
 ## Dictionary
@@ -28,7 +28,7 @@ Web Scraping 을 할 때, `CSS` 와 `Xpath`를 사용하여 HTML이나 XML속에
 
 ## CSS (Cascading Style Sheets)
 
-일반적인 CSS Selector의 syntax는 다음과 같은 모양을 가진다.
+일반적인 `CSS` Selector의 syntax는 다음과 같은 모양을 가진다:
 
 ```
 Syntax : tagname[attribute = 'attribute value']
@@ -62,7 +62,7 @@ Syntax : tagname[attribute = 'attribute value']
 
 ### Examples  
 
-1. 하나의 elemet에 다수의 class가 존재할 경우 (아래 예시의 경우 expand 와 icon)
+1. **하나의 elemet에 다수의 class가 존재할 경우 (아래 예시의 경우 expand 와 icon)**
 
 	```
 	Html Code : <label class='expand icon'>데이터</label>
@@ -71,7 +71,7 @@ Syntax : tagname[attribute = 'attribute value']
 	Css selector value : [class='expand'] [class='icon']
 	```
 
-2. Id로 추출하는 경우
+2. **Id로 추출하는 경우**
 
 	```
 	Html Code : <label id='fourth'>데이터</label>
@@ -79,7 +79,7 @@ Syntax : tagname[attribute = 'attribute value']
 	Css selector value : #fourth
 	```
 
-3. Tagname으로 추출하는 경우
+3. **Tagname으로 추출하는 경우**
 
 	```
 	Html Code : <label id='fourth'>데이터</label>
@@ -87,7 +87,7 @@ Syntax : tagname[attribute = 'attribute value']
 	Css selector value : label
 	```
 
-4. 원하는 element가 유니크 하지 않을 때, 즉 parent가 존재할 때
+4. **원하는 element가 유니크 하지 않을 때, 즉 parent가 존재할 때**
 
 	```
 	Html Code : <div id='abc' class='column'>
@@ -101,7 +101,7 @@ Syntax : tagname[attribute = 'attribute value']
 	Css with mix 1: #abc label.expand
 	```
 
-5. 소문자 대문자를 무시하고 싶을 때 (i의 사용)
+5. **소문자 대문자를 무시하고 싶을 때 (i의 사용)**
 
 	```
 	Html Code : <div id='abcDE' class='column'>
@@ -113,22 +113,22 @@ Syntax : tagname[attribute = 'attribute value']
   
 ## Xath
 
-Xpath는 이름 그대로 XML Path를 뜻한다. HTML도 XML의 구조를 가지기 때문에 대부분의 Web Scraping 상황에서 Xpath를 사용하여 원하는 elemet를 추출하는 것이 가능하다. 기본적인 Xpath syntax는 다음과 같다:
+`Xpath`는 이름 그대로 XML Path를 뜻한다. HTML도 XML의 구조를 가지기 때문에 대부분의 Web Scraping 상황에서 `Xpath`를 사용하여 원하는 elemet를 추출하는 것이 가능하다. 기본적인 syntax는 다음과 같다:
 
 ```
 Syntax : tagname[@attribute = 'attribute value']
 ```
 
-Xpath에는 두개의 종류가 있다:
+`Xpath`에는 두개의 종류가 있다:
 
-1. Absolute Xpath
+1. **Absolute Xpath**
 
 	슬래쉬 한개는 HTML의 첫번째 node(tag)만을 select한다. 
 	```
 	Syntax : /tagname[@attribute = 'attribute value']
 	```
 
-2. Relative Xpath
+2. **Relative Xpath**
 
 	슬래쉬 두개는 web page의 어떤 node(tag)든지 다 select 한다. 우리는 이 Xpath를 살펴보자.
 	```
@@ -148,13 +148,13 @@ Xpath에는 두개의 종류가 있다:
 |//\*[@\*] | //\*[@\*] | 최소 하나의 attribute를 가지는 모든 element들 추출|
 
 
-text() function - text를 이용한 추출 (소문자 대문자 조심! + text function은 @ 필요없음)
+**text() function** - text를 이용한 추출 (소문자 대문자 조심! + text function은 @ 필요없음)
 
 ```
 //xpath[text()='text value']
 ```
 
-contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial values나 dynamically changing values를 추출할 때 유용
+**contains() fucntion** - 어떤 value의 한 부분을 이용한 추출. 부분 구성이 뚜렷한 value나 역동적으로 변화하는 value를 추출할 때 유용
 
 ```
 //xpath[contains(@attribute, 'attribute value')]
@@ -169,7 +169,7 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 
 ### Examples
 
-1. tagname의 활용
+1. **tagname의 활용**
 
 	```
 	<html>
@@ -184,7 +184,7 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 	데이터: //button
 	```
 
-2. index의 활용
+2. **index의 활용**
 
 	```
 	<html>
@@ -203,7 +203,7 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 	데이터3: //button[3]
 	```
 
-3. attribute의 활용
+3. **attribute의 활용**
 
 	```
 	<html>
@@ -226,7 +226,7 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 	데이터3: //button[@name='banana'][@id='1']
 	```
 
-4. parent-child 관계의 활용
+4. **parent-child 관계의 활용**
 
 	```
 	<html>
@@ -248,9 +248,9 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 	데이터2: //div[@id='pancakes']/button[2]
 	```
 
-5. group index의 활용
+5. **group index의 활용**
 
-	group index는 모든 매칭되는 element들을 리스트에 넣고 각각에게 index를 부여한다. 그러므로 같은 매칭이 서로 구분 될 수 있게끔 한다. 아래의 예시에서는 모든 button을 매칭되는 element로 간주하고 총 여섯개의 button들에 대해 index를 부여한다고 볼 수 있다.
+	`group index`는 모든 매칭되는 element들을 리스트에 넣고 각각에게 index를 부여한다. 그러므로 같은 매칭이 서로 구분 될 수 있게끔 한다. 아래의 예시에서는 모든 button을 매칭되는 element로 간주하고 총 여섯개의 button들에 대해 index를 부여한다고 볼 수 있다.
 
 	```
 	<html>
@@ -272,7 +272,7 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 	데이터5: (//button)[5]
 	```
 
-6. text function의 활용
+6. **text function의 활용**
 
 	```
 	<button type="button">데이터1</button><br><br>
@@ -283,7 +283,7 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 	//button[text()] 혹은 //button/text(): 텍스트를 가지는 모든 element들 추출
 	```
 
-7. contains function의 활용
+7. **contains function의 활용**
 
 	```
 	<html>
