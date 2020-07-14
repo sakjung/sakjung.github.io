@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS와 XPath Syntax 간단 요약
+title: CSS와 XPath
 subtitle: Cheat sheet
 #cover-img: /assets/img/path.jpg
 #image: /assets/img/path.jpg
@@ -13,7 +13,10 @@ comments: true
 	text-align: justify}
 </style>
 
-Web Scraping 을 할 때, `CSS` 와 `Xpath`를 사용하여 HTML이나 XML속에 존재하는 원하는 데이터의 위치를 찾아 추출할 수 있다. 주로 `Selenium`, Python 에서 주로 사용하는 `Scrapy`나 `BeautifulSoup` 그리고 R에서 주로 사용하는 `Rvest` 등등을 이용해서 Web Page에 대한 직접적 parsing을 통한 Web Scraping을 하고자 할 때 필요하다. 이 때, `CSS` 와 `Xpath` syntax가 헷갈리거나 가물가물한 경우가 종종 생길 수 있다. 본 포스팅에서는 참고하기 용이 하게끔 자주 쓰이는 syntax들을 간략하게 정리 해 보았다. **참고로 `CSS`가 `Xpath` 보다 더 간결하고 퍼포먼스가 좋기 때문에 `CSS` 사용이 더 권장된다.**
+Web Scraping 을 할 때, `CSS` 와 `Xpath`를 사용하여 HTML이나 XML속에 존재하는 원하는 데이터의 위치를 찾아 추출할 수 있다.  
+주로 `Selenium`, Python의 `Scrapy`나 `BeautifulSoup` 그리고 R의 `Rvest` 등을 이용해서 Web Page에 대한 직접적 parsing을 통한 Web Scraping을 하고자 할 때 필요하다.  
+이 때, `CSS` 와 `Xpath` syntax가 헷갈리거나 가물가물한 경우가 종종 생길 수 있다. 본 포스팅에서는 참고하기 용이 하게끔 자주 쓰이는 syntax들을 간략하게 정리 해 보았다.  
+**참고로 `CSS`가 `Xpath` 보다 더 간결하고 퍼포먼스가 좋기 때문에 `CSS` 사용이 더 권장된다.**
 
 ## Dictionary
 
@@ -56,7 +59,8 @@ Syntax : tagname[attribute = 'attribute value']
 
 ### Pseudo-classes
 
-이 syntax들은 다양한 특수 상황을 이용해서 elemet들을 추출하고 싶을때 사용할 수 있다. 양이 너무 많으므로 [`w3schools`](https://www.w3schools.com/css/css_pseudo_classes.asp)를 참고하기 바란다.
+이 syntax들은 다양한 특수 상황을 이용해서 elemet들을 추출하고 싶을때 사용할 수 있다.  
+양이 너무 많으므로 [`w3schools`](https://www.w3schools.com/css/css_pseudo_classes.asp)를 참고하기 바란다.
 
 ### Examples  
 
@@ -152,8 +156,7 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 
 ```
 //xpath[contains(text(), 'text1')][contains(text(), 'text2')]
-```
-<br>
+```  
 
 |**Syntax**|**Example**|**Description**|
 |:--------:|:---------:|:---------------:|
