@@ -139,6 +139,17 @@ Xpath에는 두개의 종류가 있다:
 
 ### Cheat sheet
 
+|**Syntax**|**Example**|**Description**|
+|:--------:|:---------:|:---------------:|
+|\*|\*| wildcard. tagname이나 attribute대신 사용될 수 있다 |
+|@\* | @\* | 어떤 attribute node 든지 모두 매칭 |
+|//\* |//\* | web page상의 모든 element들 추출|
+|//tagname/* |//div/* | div tag안의 모든 element들 추출|
+| //tagname \| //tagname | //title \| //price | web page상의 모든 title element와 price element 추출 | 
+|//tagname[@\*] | //input[@\*] | input tag와 최소 하나의 attribute를 가지는 모든 element들 추출 (attribute value는 존재하든 안하든 상관 없음)|
+|//\*[@\*] | //\*[@\*] | 최소 하나의 attribute를 가지는 모든 element들 추출|
+
+
 text() function - text를 이용한 추출 (소문자 대문자 조심! + text function은 @ 필요없음)
 
 ```
@@ -156,17 +167,7 @@ contains() fucntion - 어떤 value의 한 부분을 이용한 추출. partial va
 
 ```
 //xpath[contains(text(), 'text1')][contains(text(), 'text2')]
-```  
-  
-|**Syntax**|**Example**|**Description**|
-|:--------:|:---------:|:---------------:|
-|\*|\*| wildcard. tagname이나 attribute대신 사용될 수 있다 |
-|@\* | @\* | 어떤 attribute node 든지 모두 매칭 |
-|//\* |//\* | web page상의 모든 element들 추출|
-|//tagname/* |//div/* | div tag안의 모든 element들 추출|
-| //tagname \| //tagname | //title \| //price | web page상의 모든 title element와 price element 추출 | 
-|//tagname[@\*] | //input[@\*] | input tag와 최소 하나의 attribute를 가지는 모든 element들 추출 (attribute value는 존재하든 안하든 상관 없음)|
-|//\*[@\*] | //\*[@\*] | 최소 하나의 attribute를 가지는 모든 element들 추출|
+```
 
 ### Examples
 
