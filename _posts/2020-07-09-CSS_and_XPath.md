@@ -111,7 +111,7 @@ Syntax : tagname[attribute = 'attribute value']
 
 ******
   
-## Xath
+## Xpath
 
 `Xpath`는 이름 그대로 XML Path를 뜻한다. HTML도 XML의 구조를 가지기 때문에 대부분의 Web Scraping 상황에서 `Xpath`를 사용하여 원하는 elemet를 추출하는 것이 가능하다. 기본적인 syntax는 다음과 같다:
 
