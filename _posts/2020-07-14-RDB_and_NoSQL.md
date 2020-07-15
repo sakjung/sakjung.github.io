@@ -20,7 +20,7 @@ comments: true
 > **Horizontal scaling**: 처리하고자 하는 업무에 더 많은 서버, 머신, 노드등을 추가하여 더 효율적인 처리가 가능한가에 관한 특성을 말한다.  
 > **Availability**: 작업자의 database의 이용 가능 여부를 말한다. 여러 조각으로 분산된 database일 수록 높은 availability를 가진다고 할 수 있다.
 
-<br>
+
 그렇다면 언제 `Relational Database`를 쓰는게 좋고, 언제 `NoSQL`을 쓰는게 좋을까? 둘의 상대적인 장단점을 간략하게 비교해보자.
 
 ******
