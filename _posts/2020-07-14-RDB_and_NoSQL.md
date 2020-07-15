@@ -40,8 +40,9 @@ comments: true
 |9|Data Aggregation과 Analytics|**유리**|불리|
 
 - **부연 설명**
-	요구조건 2: `Relational Database`의 경우 테이블들 간의 관계를 이용하여 유연하게 query구문을 작성할 수 있다. 하지만 `NoSQL`의 경우 보통 사용하고자 하는 query문을 먼저 정의한 후 이에 맞춘 데이터 베이스를 구성하기 때문에 추후에 query에 변화를 주기 힘들 수 있다. 
 
-	요구조건 4 & 7: ACID transaction을 지원하느냐의 여부와 관련이 깊다. ACID transaction의 정의는 [나무위키](https://namu.wiki/w/Acid) 에서 확인 가능하다. `Relational Database`는 ACID transaction을 보장해 주지만 `NoSQL`은 그렇지 못하다 (하지만, MongoDB처럼 예외인 경우도 있다). ACID특성은 에러나 전원 장애같은 상황에서도 Database transaction의 안정성과 타당성을 보장해 주지만, 낮은 throughput의 원인이 되기도 한다.
+	**요구조건 2**: `Relational Database`의 경우 테이블들 간의 관계를 이용하여 유연하게 query구문을 작성할 수 있다. 하지만 `NoSQL`의 경우 보통 사용하고자 하는 query문을 먼저 정의한 후 이에 맞춘 데이터 베이스를 구성하기 때문에 추후에 query에 변화를 주기 힘들 수 있다. 
+
+	**요구조건 4 & 7**: ACID transaction을 지원하느냐의 여부와 관련이 깊다. ACID transaction의 정의는 [나무위키](https://namu.wiki/w/Acid) 에서 확인 가능하다. `Relational Database`는 ACID transaction을 보장해 주지만 `NoSQL`은 그렇지 못하다 (하지만, MongoDB처럼 예외인 경우도 있다). ACID특성은 에러나 전원 장애같은 상황에서도 Database transaction의 안정성과 타당성을 보장해 주지만, 낮은 throughput의 원인이 되기도 한다.
 
 
