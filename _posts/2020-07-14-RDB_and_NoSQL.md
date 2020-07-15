@@ -32,9 +32,9 @@ comments: true
 |1|방대한 데이터 양|불리|**유리**|
 |2|자주 변하는 비즈니스 요구사항|**유리**| 불리|
 |3|데이터 타입이나 스키마 구조에 대한 유연성|불리|**유리**|
-|4|높은 Throughput (빠른 read와 write)|불리|**유리**|
+|4|뛰어난 Throughput (빠른 read와 write)|불리|**유리**|
 |5|Horizontal scaling|불리|**유리**|
-|6|높은 availability|불리|**유리**|
+|6|뛰어난 availability|불리|**유리**|
 |7|Data transaction의 안정성과 타당성|**유리**|불리|
 |8|테이블간의 JOIN|**유리**|불리|
 |9|Data Aggregation과 Analytics|**유리**|불리|
