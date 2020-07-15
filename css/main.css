@@ -4,8 +4,9 @@ layout: null
 
 @import url("pygment_highlights.css");
 /* @import url("bm.css"); */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 
-<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+/* <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet"> */
 
 /* --- General --- */
 
@@ -13,7 +14,7 @@ layout: null
 
 body {
   font-family: 'Do Hyeon', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color: #404040;
   position: relative;
   background-color: {{ site.page-col }};
