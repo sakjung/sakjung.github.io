@@ -250,7 +250,7 @@ Syntax : tagname[@attribute = 'attribute value']
 
 5. **group index의 활용**
 
-	`group index`는 모든 매칭되는 element들을 리스트에 넣고 각각에게 index를 부여한다. 그러므로 같은 매칭이 서로 구분 될 수 있게끔 한다. 아래의 예시에서는 모든 button을 매칭되는 element로 간주하고 총 여섯개의 button들에 대해 index를 부여한다고 볼 수 있다.
+	group index는 모든 매칭되는 element들을 리스트에 넣고 각각에게 index를 부여한다. 그러므로 같은 매칭이 서로 구분 될 수 있게끔 한다. 아래의 예시에서는 모든 button을 매칭되는 element로 간주하고 총 여섯개의 button들에 대해 index를 부여한다고 볼 수 있다.
 
 	```
 	<html>
