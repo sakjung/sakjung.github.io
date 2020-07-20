@@ -30,6 +30,7 @@ import psycopg2
 from typing import Iterator, Optional
 import io
 from typing import Any
+import pandas as pd
 ```
 
 우선 필요한 package들을 import 해준다. 아래 두 코드 블록은 [Haki Benita](https://hakibenita.com/fast-load-data-python-postgresql) 의 블로그를 참고 했다.
