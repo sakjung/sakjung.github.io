@@ -38,7 +38,7 @@ def clean_csv_value(value: Optional[Any]) -> str:
     return str(value).replace('\n', '\\n')
 ```
 
-`clean_csv_vale function` 을 만들어 준다. 이 function은 json 형태로 들어온 API 데이터를 csv 형태로 바꿔주기 위해 데이터를 정돈하는 역할을 한다. PostgreSQL은 COPY를 할 때 default로 '\N'을 NULL값으로 받아 들이기 때문에 None값 (empty values)들을 '\N'으로 바꿔 준다. 그리고 csv내의 실제 줄바꿈 ('\n')과 구별하기 위하여 데이터 내 모든 줄바꿈 에 대해서 backslash를 한번 더 입혀 escape 해준다 (\n -> \\\n).
+clean_csv_vale function 을 만들어 준다. 이 function은 json 형태로 들어온 API 데이터를 csv 형태로 바꿔주기 위해 데이터를 정돈하는 역할을 한다. PostgreSQL은 `COPY`를 할 때 default로 '\N'을 NULL값으로 받아 들이기 때문에 None값 (empty values)들을 '\N'으로 바꿔 준다. 그리고 csv내의 실제 줄바꿈 ('\n')과 구별하기 위하여 데이터 내 모든 줄바꿈 에 대해서 backslash를 한번 더 입혀 escape 해준다 (\n -> \\\n).
 
 ```python
 class StringIteratorIO(io.TextIOBase):
@@ -77,14 +77,14 @@ class StringIteratorIO(io.TextIOBase):
         return ''.join(line)
 ```
 
-`StringIteratorIO` class는 string iterator buffer 를 만드는 역할을 한다. 나중에 **file** (e.g. csv)을 직접적으로 읽어들여 이용하는 대신 이 **file-like object** buffer가 대신 copy_from에 사용된다. file을 직접적으로 읽어 들이지 않고도 file형태를 가지는 buffer를 만들어 내기 때문에 메모리 사용량을 획기적으로 줄일 수 있다.
+StringIteratorIO class는 string iterator buffer 를 만드는 역할을 한다. 나중에 **file** (e.g. csv) 형태 그대로 사용하는 대신 이 **file-like object** buffer가 대신 copy_from에 사용된다. file을 직접적으로 읽어 들이지 않고도 file형태를 가지는 buffer를 만들어 내기 때문에 메모리 사용량을 획기적으로 줄일 수 있다.
 
 ```python
 conn = psycopg2.connect("host=127.0.0.1 dbname=mydb user=myusername password=mypassword")
 cur = conn.cursor()
 ```
 
-이제 db에 연결을 해주고 cursor를 만들어 주자. 이제 user들의 log json데이터에서 user 데이터를 추출하여 db에 집어넣는 상황을 가정해보자.
+이제 db에 연결을 해주고 cursor를 만들어 주자. 이제 json log 데이터에서 user 에 관련된 부분을 추출하여 db에 집어넣는 상황을 가정해보자.
 
 ```python
 user_table_create = ("""CREATE TABLE users (
@@ -101,7 +101,7 @@ cur.execute(user_table_create)
 conn.commit()
 ```
 
-users table을 만들어 주었다. 본 포스팅은 필자의 local environment에 저장된 json 파일을 가지고 실험을 해보았다. API를 통해서 json 파일을 받는 상황이라면 그에 맞게 코드를 조정하면 되겠다. 우선 데이터들을 살펴보고 추가적인 처리가 필요한지 알아보기 위해서 dataframe 으로 읽어들여 보았다.
+users table을 만들어 주었다. 본 포스팅은 local environment에 저장된 json 파일을 가지고 실험을 해보았다. API를 통해서 json 파일을 받는 상황이라면 그에 맞게 코드를 조정하면 되겠다. 우선 데이터들을 살펴보고 추가적인 처리가 필요한지 알아보기 위해서 dataframe 으로 읽어들여 보았다.
 
 ```python
 filepath = './data/log_data/2018/11/2018-11-29-events.json' 
@@ -113,7 +113,7 @@ user_df = df[['userId', 'firstName', 'lastName', 'gender', 'level']]
 # 다양한 방법으로 dataset들을 살펴보자 
 ```
 
-dataframe을 확인하여 데이터를 전반적으로 살펴보았다. 이제 csv file-like object를 만들어 보도록 하자. API를 통해 json 파일을 받는 상황을 가정하였으므로, dataframe을 다시 json 형식으로 바꾸어 주었다.
+데이터를 전반적으로 살펴 보았다면 이제 csv file-like object를 만들어 보도록 하자. API를 통해 json 파일을 받는 상황을 가정하였으므로, dataframe을 다시 json 형식으로 바꾸어 주었다.
 
 ```python
 user_log = user_df.to_json(orient='values')
@@ -161,7 +161,7 @@ temp_to_user = """
 """
 ```
 
-users table의 경우 user_id가 primary key이다. Primary key는 테이블 내에서 중복을 허용하지 않는다. 그러므로, COPY를 통해 집어 넣으려는 데이터 중 이미 테이블내에 존재하는 user_id를 가진 데이터가 있다면 에러가 나게 된다. 이 경우 upsert개념을 이용해야하는데, COPY는 INSERT 구문과 달리 한번에 대량의 데이터를 넣으므로 ON CONFLICT DO UPDATE SET 구문을 바로 이용할 수 없다. 따라서, temporary table을 만들고 여기에 다가 COPY를 한 후, ON CONFLICT DO UPDATE SET 구문을 이용하여 temporary table 전체를 users 테이블에 insert하는 방법을 써야한다. 본 예시에서는 user_id가 중복될 경우 level을 업데이트하는 경우를 가정했다. 
+users table의 경우 user_id가 primary key이다. Primary key는 테이블 내에서 중복을 허용하지 않는다. 그러므로, `COPY`를 통해 집어 넣으려는 데이터 중 이미 테이블내에 존재하는 user_id를 가진 데이터가 있다면 에러가 나게 된다. 이 경우 upsert개념을 이용해야하는데, `COPY`는 INSERT 구문과 달리 한번에 대량의 데이터를 넣으므로 ON CONFLICT DO UPDATE SET 구문을 바로 이용할 수 없다. 따라서, temporary table을 만들고 여기에 다가 COPY를 한 후, ON CONFLICT DO UPDATE SET 구문을 이용하여 temporary table 전체를 users 테이블에 insert하는 방법을 써야한다. 본 예시에서는 user_id가 중복될 경우 level을 업데이트하는 경우를 가정했다. 
 
 ```python
 cur.execute(create_user_temp_table)
@@ -191,7 +191,7 @@ WHERE users.user_id IS NULL;
 
 ### 'psycopg2.ProgrammingError: ON CONFLICT DO UPDATE command cannot affect row a second time' 에러 가 날 경우
 
-copy_from function 도중 '**psycopg2.ProgrammingError: ON CONFLICT DO UPDATE command cannot affect row a second time**' 에러가 발생 하는 경우가 생길 수 있다. error의 부연설명을 보면 '**HINT:  Ensure that no rows proposed for insertion within the same command have duplicate constrained values.**'라고 힌트가 주어진 걸 알 수 있다. 즉, COPY 커맨드를 한 번 실행할 때 중복이 없어야 하는 조건의 칼럼 (user_id)에 두번 이상의 UPDATE는 불가능 하다는 뜻이다. 그러므로, 이러한 경우 data cleaning을 통해 중복되는 user_id를 미리 없앤 후에 temporary table로 옮기는 작업 필요하다. 그렇다면 temporary table내에서 user_id 들은 unique해 질 것이고 insert시 필요한 user_id에 단 한번의 update를 부과할 수 있다.
+copy_from function 도중 '**psycopg2.ProgrammingError: ON CONFLICT DO UPDATE command cannot affect row a second time**' 에러가 발생 하는 경우가 생길 수 있다. error의 부연설명을 보면 '**HINT:  Ensure that no rows proposed for insertion within the same command have duplicate constrained values.**'라고 힌트가 주어진 걸 알 수 있다. 즉, `COPY` 커맨드를 한 번 실행할 때 중복이 없어야 하는 조건의 칼럼 (user_id)에 두번 이상의 UPDATE는 불가능 하다는 뜻이다. 그러므로, 이러한 경우 data cleaning을 통해 중복되는 user_id를 미리 없앤 후에 temporary table로 옮기는 작업 필요하다. 그렇다면 temporary table내에서 user_id 들은 unique해 질 것이고 insert시 필요한 user_id에 단 한번의 update를 부과할 수 있다.
 
 ```python
 user_df = user_df.drop_duplicates(subset='userId', keep="last")
