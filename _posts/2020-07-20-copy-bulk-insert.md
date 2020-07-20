@@ -38,7 +38,7 @@ def clean_csv_value(value: Optional[Any]) -> str:
     return str(value).replace('\n', '\\n')
 ```
 
-clean_csv_vale function 을 만들어 준다. 이 function은 json 형태로 들어온 API 데이터를 csv 형태로 바꿔주기 위해 데이터를 정돈하는 역할을 한다. PostgreSQL은 `COPY`를 할 때 default로 '\N'을 NULL값으로 받아 들이기 때문에 None값 (empty values)들을 '\N'으로 바꿔 준다. 그리고 csv내의 실제 줄바꿈 ('\n')과 구별하기 위하여 데이터 내 모든 줄바꿈 에 대해서 backslash를 한번 더 입혀 escape 해준다 (\n -> \\\n).
+`clean_csv_vale` function 을 만들어 준다. 이 function은 json 형태로 들어온 API 데이터를 csv 형태로 바꿔주기 위해 데이터를 정돈하는 역할을 한다. PostgreSQL은 `COPY`를 할 때 default로 '\N'을 NULL값으로 받아 들이기 때문에 None값 (empty values)들을 '\N'으로 바꿔 준다. 그리고 csv내의 실제 줄바꿈 ('\n')과 구별하기 위하여 데이터 내 모든 줄바꿈 에 대해서 backslash를 한번 더 입혀 escape 해준다 (\n -> \\\n).
 
 ```python
 class StringIteratorIO(io.TextIOBase):
@@ -77,7 +77,7 @@ class StringIteratorIO(io.TextIOBase):
         return ''.join(line)
 ```
 
-StringIteratorIO class는 string iterator buffer 를 만드는 역할을 한다. 나중에 **file** (e.g. csv) 형태 그대로 사용하는 대신 이 **file-like object** buffer가 대신 copy_from에 사용된다. file을 직접적으로 읽어 들이지 않고도 file형태를 가지는 buffer를 만들어 내기 때문에 메모리 사용량을 획기적으로 줄일 수 있다.
+`StringIteratorIO` class는 string iterator buffer 를 만드는 역할을 한다. 나중에 **file** (e.g. csv) 형태 그대로 사용하는 대신 이 **file-like object** buffer가 대신 copy_from에 사용된다. file을 직접적으로 읽어 들이지 않고도 file형태를 가지는 buffer를 만들어 내기 때문에 메모리 사용량을 획기적으로 줄일 수 있다.
 
 ```python
 conn = psycopg2.connect("host=127.0.0.1 dbname=mydb user=myusername password=mypassword")
@@ -161,7 +161,7 @@ temp_to_user = """
 """
 ```
 
-users table의 경우 user_id가 primary key이다. Primary key는 테이블 내에서 중복을 허용하지 않는다. 그러므로, `COPY`를 통해 집어 넣으려는 데이터 중 이미 테이블내에 존재하는 user_id를 가진 데이터가 있다면 에러가 나게 된다. 이 경우 upsert개념을 이용해야하는데, `COPY`는 INSERT 구문과 달리 한번에 대량의 데이터를 넣으므로 ON CONFLICT DO UPDATE SET 구문을 바로 이용할 수 없다. 따라서, temporary table을 만들고 여기에 다가 COPY를 한 후, ON CONFLICT DO UPDATE SET 구문을 이용하여 temporary table 전체를 users 테이블에 insert하는 방법을 써야한다. 본 예시에서는 user_id가 중복될 경우 level을 업데이트하는 경우를 가정했다. 
+users table의 경우 user_id가 primary key이다. Primary key는 테이블 내에서 중복을 허용하지 않는다. 그러므로, `COPY`를 통해 집어 넣으려는 데이터 중 이미 테이블내에 존재하는 user_id를 가진 데이터가 있다면 에러가 나게 된다. 이 경우 upsert개념을 이용해야하는데, `COPY`는 INSERT 구문과 달리 한번에 대량의 데이터를 넣으므로 ON CONFLICT DO UPDATE SET 구문을 바로 이용할 수 없다. 따라서, temporary table을 만들고 여기에 다가 `COPY`를 한 후, ON CONFLICT DO UPDATE SET 구문을 이용하여 temporary table 전체를 users 테이블에 insert하는 방법을 써야한다. 본 예시에서는 user_id가 중복될 경우 level을 업데이트하는 경우를 가정했다. 
 
 ```python
 cur.execute(create_user_temp_table)
