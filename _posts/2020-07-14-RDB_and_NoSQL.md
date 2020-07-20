@@ -8,10 +8,6 @@ title: Relational Database (관계형 데이터베이스) VS NoSQL (비관계형
 categories: data_engineering
 comments: true
 ---
-<style>
-	* {
-	text-align: justify}
-</style>
 
 `Relational Database`는 1970년 Edgar Codd에 의해 처음으로 고안된 데이터베이스 형태이다. 데이터들간의 관계를 기반으로 여러 테이블들이 한 데이터베이스 안에서 특정한 스키마 (schema)로 구성되어 있기 때문에 붙은 이름이다. `Relational Database`들을 관리하기 위한 소프트웨어를 Relational Database Management System (RDBMS)라고 한다. 대표적으로는 Oracle, Teradata, MySQL, PostgreSQL, SQLite 등이 있다.
 <br><br>
