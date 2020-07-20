@@ -8,10 +8,6 @@ title: COPY를 이용한 BULK INSERT
 categories: data_engineering
 comments: true
 ---
-<style>
-	* {
-	text-align: justify}
-</style>
 
 RDBMS 운용시 아주 방대한 데이터양을 집어넣어야 할 때는 퍼포먼스를 신경써야 하기 마련이다. 데이터 양이 커질 수록 데이터를 기입하는 방식에 따라 소요되는 시간과 메모리 양은 많은 차이를 보이기 때문이다. 본 포스팅 에서는 `COPY`를 통한 `BULK INSERT` (한 번에 대량의 데이터를 집어넣는 방식)에 대해서 알아 보고자 한다. 이 방법은 `COPY`를 통해 대량의 데이터를 데이터 베이스에 빠르게 집어 넣을 수 있을 뿐만 아니라, file-like object 인 중간 매개체 역할의 Buffer (csv 형태)를 만들고 이를 이용함으로써 메모리 사용까지 줄일 수 있는 방법이다. 아래 그림은 이러한 일련의 과정을 시각적으로 보여준다.
 
