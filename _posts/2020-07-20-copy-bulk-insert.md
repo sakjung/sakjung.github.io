@@ -137,7 +137,7 @@ user_string_iterator = StringIteratorIO((
 
 **부연설명:**
 1. for loop을 통해 users내의 list들을 차례로 추출한다. 각각의 list는 총 5개의 element를 가진다.
-2. clean_csv_value를 각 element에 mapping 하고, 각 element들을 '|'로 join한다. element가 ','를 포함하고 있을 수 있으므로 '|'를 이용했다.
+2. clean_csv_value를 각 element에 mapping 하고, 각 element들을 '\|'로 join한다. element가 ','를 포함하고 있을 수 있으므로 '\|'를 이용했다.
 3. 마지막으로 줄바꿈 '\n'을 끝에 붙여주고 다음 iteration으로 넘어간다
 
 본 예시에서는 저장된 json파일을 dataframe으로 변환 후 다시 values만 뽑아 냈기 때문에 users가 list of lists 이다. 하지만, 보통 API를 통해 json 형태의 데이터를 받는 경우 dictionary 형태인 경우가 대부분 일 것이다. 그러므로 json 데이터의 구조를 먼저 잘 파악하자.
