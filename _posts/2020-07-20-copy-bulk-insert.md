@@ -38,7 +38,7 @@ def clean_csv_value(value: Optional[Any]) -> str:
     return str(value).replace('\n', '\\n')
 ```
 
-`clean_csv_vale function` 을 만들어 준다. 이 function은 json 형태로 들어온 API 데이터를 csv 형태로 바꿔주기 위해 데이터를 정돈(?)하는 역할을 한다. 추후에 쓰일 PostgreSQL은 COPY를 할 때 default로 NULL값을 '\N'로 받아 들이기 때문에 None값 (empty values)들을 '\N'으로 바꿔 준다. 그리고 csv내의 실제 줄바꿈 ('\n')과 구별하기 위하여 데이터 내 모든 줄바꿈 에 대해서 backslash를 한번 더 입혀 escape 해준다 (\n -> \\n).
+`clean_csv_vale function` 을 만들어 준다. 이 function은 json 형태로 들어온 API 데이터를 csv 형태로 바꿔주기 위해 데이터를 정돈하는 역할을 한다. 추후에 쓰일 PostgreSQL은 COPY를 할 때 default로 NULL값을 '\N'로 받아 들이기 때문에 None값 (empty values)들을 '\N'으로 바꿔 준다. 그리고 csv내의 실제 줄바꿈 ('\n')과 구별하기 위하여 데이터 내 모든 줄바꿈 에 대해서 backslash를 한번 더 입혀 escape 해준다 (\n -> \\n).
 
 ```python
 class StringIteratorIO(io.TextIOBase):
