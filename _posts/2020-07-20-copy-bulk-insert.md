@@ -122,7 +122,7 @@ dataframe을 확인하여 데이터를 전반적으로 살펴보았다. 이제 c
 ```python
 user_log = user_df.to_json(orient='values')
 users = json.loads(user_log)
-# users를 iterator로 변환 시켰다 (list of lists) 
+# users를 'list of lists' iterator로 변환 시켰다 
 
 user_string_iterator = StringIteratorIO((
     '|'.join(map(clean_csv_value, (
