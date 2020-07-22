@@ -9,12 +9,12 @@ categories: data_engineering
 comments: true
 ---
 
-Cassandra는 Uber, Netflix, Twitter 등등 수많은 기업들이 사용하고 있는 대표적인 NoSQL 데이터 베이스이다. NoSQL도 Relational Database와 같이 primary Key 개념이 있지만 조금 다르게 쓰인다. [Stackoverflow](https://stackoverflow.com/a/24953331/12982476)에 잘 설명 된 답변이 있어서 간단하게 요약해 보고자 한다.
+Cassandra는 Uber, Netflix, Twitter 등등 수많은 기업들이 사용하고 있는 대표적인 NoSQL 데이터 베이스이다. NoSQL도 Relational Database와 같이 primary Key 개념이 있지만 조금 다르게 쓰인다. [Stackoverflow](https://stackoverflow.com/a/24953331/12982476)에 잘 설명 된 답변이 있어서 여기서 풀어 보고자 한다.
 
 ## Primary Key
 
 Cassandra에서도 `primary key`는 각 row의 유니크함을 보장하고자 하는 목적도 있지만, 더 나아가 query에서 쓰일 column들을 규정한다는 점에 더 초점을 맞춘다.<br><br>
-`Primary key`는 하나의 column으로 구성될 수도 있고 다수의 column들로 구성 될 수도 있다. 전자를 **simple primary key** 라고 하고 후자를 **composite (compound) primary key** 라고 한다. <br>
+`Primary key`는 하나의 column으로 구성될 수도 있고 다수의 column들로 구성 될 수도 있다. 전자를 **simple primary key** 라고 하고 후자를 **composite (compound) primary key** 라고 한다.
 
 1. **Simple Primary Key**
 
@@ -76,7 +76,6 @@ Cassandra의 query (CQL)에서는 `where` 구문의 사용에 신경을 써야�
 	```
 	
 	**Output**
-	
 	```
 	key | data
 	----+------
@@ -93,10 +92,9 @@ Cassandra의 query (CQL)에서는 `where` 구문의 사용에 신경을 써야�
 	select * from composite where key_part_one = 'ronaldo';
 	```
 	
-	composite 테이블에 데이터를 넣어 주고 partition key (key_part_one)만을 이용해서 query를 해보았다.<br><br>
+	composite 테이블에 데이터를 넣어 주고 partition key (key_part_one)만을 이용해서 query를 해보았다.<br>
 	
 	**Output**
-	
 	```
 	key_part_one | key_part_two | data
 	--------------+--------------+--------------------
@@ -112,7 +110,6 @@ Cassandra의 query (CQL)에서는 `where` 구문의 사용에 신경을 써야�
 	 ```
 
 	**Output**
-	
 	```
 	 key_part_one | key_part_two | data
 	--------------+--------------+--------------------
