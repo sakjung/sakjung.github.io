@@ -98,8 +98,8 @@ Cassandra의 query (CQL)에서는 `where` 구문의 사용에 신경을 써야�
 	```
 	key_part_one | key_part_two | data
 	--------------+--------------+--------------------
-		  ronaldo |            9 |    football player
-		  ronaldo |           10 | ex-football player
+	  ronaldo |            9 |    football player
+	  ronaldo |           10 | ex-football player
 	```
 
 	 그리고, partition key와 clustering key를 모두 사용하여 query 하는 것도 가능하다
