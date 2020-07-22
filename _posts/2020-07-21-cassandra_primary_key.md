@@ -37,27 +37,27 @@ Cassandra에서도 `primary key`는 각 row의 유니크함을 보장하고자 �
 	```
 	
 	`primary key`의 첫 번째 부분은 ***PARTITION KEY***라고 한다 (i.e. key_part_one)<br>
-	`primary key`두 번째 부분은 ***CLUSTERING KEY***라고 한다 (i.e. key_part_two) 
+	`primary key`의 두 번째 부분은 ***CLUSTERING KEY***라고 한다 (i.e. key_part_two) 
 
 
-여기서 **partitoin key** 와 **clustering key** 는 여러개의 칼럼으로 구성될 수 있다. 다음 예시를 보자.
+	여기서 **partitoin key** 와 **clustering key** 는 여러개의 칼럼으로 구성될 수 있다. 다음 예시를 보자.
 
-```
-create table multiple (
-      k_part_one text,
-      k_part_two int,
-      k_clust_one text,
-      k_clust_two int,
-      k_clust_three uuid,
-      data text,
-      PRIMARY KEY((k_part_one, k_part_two), k_clust_one, k_clust_two, k_clust_three)      
-);
-```
+	```
+	create table multiple (
+	      k_part_one text,
+	      k_part_two int,
+	      k_clust_one text,
+	      k_clust_two int,
+	      k_clust_three uuid,
+	      data text,
+	      PRIMARY KEY((k_part_one, k_part_two), k_clust_one, k_clust_two, k_clust_three)      
+	);
+	```
 
-(k_part_one, k_part_two): **partition key**
-k_clust_one, k_clust_two, k_clust_three: **clustering key**
+	(k_part_one, k_part_two): **partition key**<br>
+	k_clust_one, k_clust_two, k_clust_three: **clustering key**
 
-각 key들을 정리를 하자면,<br><br> 
+각 key들을 정리를 하자면,<br>
 
 - **Partition Key**: 데이터들이 어느 node (machine)에 분배될 것인지를 결정
 - **Clustering Key**: Partition 내에서 데이터를 sort (정렬)하는 역할 
@@ -71,7 +71,7 @@ Cassandra의 query (CQL)에서는 `where` 구문의 사용에 신경을 써야�
 1. **Simple Primary Key**
 
 	```
-	insert into stackoverflow_simple (key, data) VALUES ('jung', 'babo');
+	insert into simple (key, data) VALUES ('jung', 'babo');
 	select * from simple where key='jung';
 	```
 	
