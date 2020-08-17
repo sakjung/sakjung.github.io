@@ -1,0 +1,80 @@
+---
+layout: post
+title: 2020-08-16
+# subtitle: Warwick
+#cover-img: /assets/img/path.jpg
+#image: /assets/img/path.jpg
+#share-img: /assets/img/path.jpg
+categories: music
+comments: true
+---
+
+<style> 
+ .centered {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+ }
+ 
+  .column {
+  position: relative;
+  float: left;
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+  }
+
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
+</style>
+
+<div class="row">
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/98ZtsBjBgUQI5jbCPjFiJztTbvWeqdLAxt4dmt13KsFAaM-wMD8N9CujkxFOGBaVXt7gnmIacUoTu5s=w544-h544-l90-rj" style="width:100%;"><br><br>
+    <font class="centered" face='BMHANNAAir' size="-1">Limbo - Aminé (Album)</font>
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/ej-_o4JxUvlHjmcBXh5IBb-ECOBB8iRFmlCCaO52ssL-r-l3pxS3q_U5RaenI4KZ6XqBgxsYnOpdUBaQoA=w544-h544-l90-rj" style="width:100%;"><br><br>
+    <font class="centered" face='BMHANNAAir' size="-1">Trapped On Cleveland 3 - Lil Keed (Album) </font>
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/ZlEL29aesPdka71bHllaT8HAV14I3G0vJoIZot4I6yOCQgHVtu9JS3wl0BASq3yjQ7y8XKXUc8dNBbNLHA=w544-h544-l90-rj" style="width:100%;"><br><br>
+    <font class="centered" face='BMHANNAAir' size="-1">BLAME IT ON BABY (DELUXE) - DaBaby (Album)</font>
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/e7BubNnT0mE7CDvY2kZmY4X_45kbkLK60X16c6B-_sokNAOK523Si30bU08hK_UoS7fqLUTjgFLAERKA=w544-h544-l90-rj" style="width:100%;"><br><br>
+    <font class="centered" face='BMHANNAAir' size="-1">Smile - Juice WRLD & The Weeknd (Single)</font>
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/xNgBOstiyxqLfRaWmYRNj6qrljFJGuefL1h4sTXIc_9pWTqM_aZRMzNeTOM_VLoeq__n8A8yjfl9mSnn=w544-h544-l90-rj" style="width:100%;"><br><br>
+    <font class="centered" face='BMHANNAAir' size="-1">All In - YoungBoy Never Broke Again (Single) </font>
+  </div>  
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/cdt8oNK_PIVnJ_MUBzNQQEBjdVz3c52cg5bJEKggDdjvxxWifv5YLIJxgbIEUCtYEhqViLHfok5pGVfo=w544-h544-l90-rj" style="width:100%;"><br><br>
+    <font class="centered" face='BMHANNAAir' size="-1">Laugh Now Cry Later (feat. Lil Durk) - Drake (Single)</font>
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/W9W-FKXfonX63KkzD93iZMr7s4EHYvzRJX-sC74jQkLnA1utkryDGtKD1-HH-yAaQjsejZx5LFEAzxQe=w544-h544-l90-rj" style="width:100%;"><br><br>
+    <font class="centered" face='BMHANNAAir' size="-1">CUT EM IN (feat. Rick Ross) - Anderson.Paak (Single) </font>
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/9rRYD3ILlJVj0DwG17bEA7TQ4i6nleeftqLa94LcZFUbwAQwIAmUvsr88Lcf2fTLFeNZUm7wvDduAo0=w544-h544-l90-rj" style="width:100%;"><br><br>
+    <font class="centered" face='BMHANNAAir' size="-1">Let's Go (feat. Lil Tjay & Iann Dior) - Polo G (Single)</font>
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/nbZcnrwUzG3TbZW7x55x85wV_8g44uKpWGpdKgggZtR-z5LWVPFL5poU4pkaybv7yOs6_3Wumn_mNEuZ=w544-h544-l90-rj" style="width:100%;"><br><br>
+    <font class="centered" face='BMHANNAAir' size="-1">MINE- Paul Blanco (Single)</font>
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/MIV2PQdpBFy9Ujm1JYSJBr02NWFON1nC8DqYwq2BSCdZkDuTp4kKNIkoLlzPfyUWaPC4DyZbE-ZfSefR=w544-h544-l90-rj" style="width:100%;"><br><br>
+    <font class="centered" face='BMHANNAAir' size="-1">Legacy - Hi-Lite Records (Album) </font>
+  </div>  
+</div>
