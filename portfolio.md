@@ -14,7 +14,6 @@ title: Portfolio
   position: relative;
   float: left;
   width: 50%;
-  height: 200px;
   padding: 20px;
   text-align: center;
   }
@@ -35,7 +34,7 @@ title: Portfolio
 <div class="row">
   <div class="column">
     <a href="https://github.com/sakjung/dissertation">
-      <img src="https://www.logo.wine/a/logo/Tidal_(service)/Tidal_(service)-Logo.wine.svg" style="width:100%;">
+      <img src="https://www.logo.wine/a/logo/Tidal_(service)/Tidal_(service)-Logo.wine.svg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Tidal</font>
     <p class="texts">A dissertation submitted in partial fulfilment for the degree of MSc in Business Analytics at Warwick Business School. This project suggests a framework to diagnose Tidal's music streaming service by analysing app store reviews data.</p>
@@ -44,7 +43,7 @@ title: Portfolio
   </div>
   <div class="column">
     <a href="https://github.com/sakjung/edgar">
-      <img src="https://offistraedgarfiling.com/wp-content/uploads/2020/01/Form-10-K.jpg" style="width:100%;">
+      <img src="https://offistraedgarfiling.com/wp-content/uploads/2020/01/Form-10-K.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Edgar</font>
     <p class="texts">Text Analysis on Edgar 10-K and 10-Q form filings of S&P 500 companies. This project tried various text analysis approaches on Edgar filings to extract meaningful insights and predict stock prices.</p>
@@ -57,7 +56,7 @@ title: Portfolio
 <div class="row">
   <div class="column">
     <a href="https://github.com/sakjung/airbnb">
-      <img src="https://w7.pngwing.com/pngs/248/721/png-transparent-airbnb-rebrand-logo-online-marketplace-rebranding-airbnb-logo-text-service-trademark.png" style="width:100%;">
+      <img src="https://w7.pngwing.com/pngs/248/721/png-transparent-airbnb-rebrand-logo-online-marketplace-rebranding-airbnb-logo-text-service-trademark.png" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Airbnb</font>
     <p class="texts">Text Analysis on Airbnb reviews with publicly opened data source of reviews, listings, and calendar data. This project not only applied text analysis approahces on Airbnb review data but also combined reviews with other given metadata to obtain more meaningful insights. This project also tried to predict the listing price and review score by analysing the review sentiments and topics.</p>
@@ -66,7 +65,7 @@ title: Portfolio
   </div>
   <div class="column">
     <a href="https://github.com/sakjung/hhl_hhp">
-      <img src="https://rascalsbrewing.com/wp-content/uploads/2019/07/hiphop-aw.jpg" style="width:100%;">
+      <img src="https://rascalsbrewing.com/wp-content/uploads/2019/07/hiphop-aw.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Hiphople & Hiphopplaya</font>
     <p class="texts">RSelenium based Web scraping tool for the two Korean Hip-Hop online community platforms 'Hiphople' and 'Hiphopplaya', that have dynamically changing web pages.</p>
