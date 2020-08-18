@@ -46,7 +46,7 @@ title: Portfolio
       <img src="https://offistraedgarfiling.com/wp-content/uploads/2020/01/Form-10-K.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Edgar</font>
-    <p class="texts">Text Analysis on Edgar 10-K and 10-Q form filings of S&P 500 companies to extract meaningful insights and predict stock prices.</p>
+    <p class="texts">Text analysis on Edgar 10-K and 10-Q form filings of S&P 500 companies to extract meaningful insights and predict stock prices.</p>
     <p class="texts">Skill Set: Data Crawling/Scraping, Data Cleaning/Wrangling, Text Pre-Processing Techniques, Basic Text Analysis, Sentiment Analysis, Topic Modelling</p> 
     <p class="texts">Tools: R, SQLite</p>
   </div>
@@ -58,7 +58,7 @@ title: Portfolio
       <img src="https://assets.entrepreneur.com/content/3x2/2000/1405612741-airbnb-why-new-logo.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Airbnb</font>
-    <p class="texts">Text Analysis on Airbnb reviews with publicly opened data source of reviews, listings, and calendar data.</p>
+    <p class="texts">Text analysis on Airbnb reviews with publicly opened data source of reviews, listings, and calendar data.</p>
     <p class="texts">Skill Set: Data Crawling/Scraping, Data Cleaning/Wrangling, Text Pre-Processing Techniques, Basic Text Analysis, Sentiment Analysis, Topic Modelling</p>
     <p class="texts">Tools: R, SQLite</p>
   </div>
@@ -67,7 +67,7 @@ title: Portfolio
       <img src="https://rascalsbrewing.com/wp-content/uploads/2019/07/hiphop-aw.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Hiphople & Hiphopplaya</font>
-    <p class="texts">RSelenium based Web scraping tool for the two Korean Hip-Hop online community platforms 'Hiphople' and 'Hiphopplaya', that have dynamically changing web pages.</p>
+    <p class="texts">RSelenium based web scraping tool for the two Korean Hip-Hop online community platforms 'Hiphople' and 'Hiphopplaya', that have dynamically changing web pages.</p>
     <p class="texts">Skill Set: Data Crawling/Scraping with Selenium, Data Cleaning/Wrangling</p>
     <p class="texts">Tools: R, SQLite</p>
   </div>
