@@ -55,7 +55,7 @@ title: Portfolio
 <div class="row">
   <div class="column">
     <a href="https://github.com/sakjung/airbnb">
-      <img src="https://static.dezeen.com/uploads/2014/07/Airbnb-rebrand-by-DesignStudio_dezeen_468_8-300x300.jpg" style="width:100%;height:200px;">
+      <img src="https://assets.entrepreneur.com/content/3x2/2000/1405612741-airbnb-why-new-logo.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Airbnb</font>
     <p class="texts">Text Analysis on Airbnb reviews with publicly opened data source of reviews, listings, and calendar data.</p>
