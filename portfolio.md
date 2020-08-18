@@ -77,9 +77,9 @@ title: Portfolio
       <img src="https://rascalsbrewing.com/wp-content/uploads/2019/07/hiphop-aw.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Hiphople & Hiphopplaya</font>
-    <p class="texts">RSelenium based web scraping tool for the two Korean Hip-Hop online community platforms 'Hiphople' and 'Hiphopplaya', that have dynamically changing web pages.</p>
+    <p class="texts">Crawling the two Korean Hip-Hop online community platforms 'Hiphople' and 'Hiphopplaya'.</p>
     <p class="texts">Skill Set: Data Crawling/Scraping with Selenium, Data Engineering</p>
-    <p class="texts">Tools: R, SQLite</p>
+    <p class="texts">Tools: R, Selenium, SQLite</p>
   </div>
 </div>
 
