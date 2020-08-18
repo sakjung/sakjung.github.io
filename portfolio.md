@@ -26,7 +26,7 @@ title: Portfolio
   }
   
   .texts {
-  text-align: justify;
+  text-align: left;
   }
  
 </style>
