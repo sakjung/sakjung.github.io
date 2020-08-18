@@ -13,7 +13,7 @@ title: Portfolio
   .column {
   position: relative;
   float: left;
-  width: 50%;
+  width: 33.3%;
   padding: 20px;
   text-align: center;
   }
@@ -38,7 +38,7 @@ title: Portfolio
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Tidal</font>
     <p class="texts">A framework to diagnose Tidal's music streaming service by analysing app store reviews data.</p>
-    <p class="texts">Skill Set: Data Crawling/Scraping, Data Cleaning/Wrangling, Text Pre-Processing Techniques, Structural Topic Modelling, Mathematical Algorithms</p>
+    <p class="texts">Skill Set: Data Crawling/Scraping, Data Engineering, Text Pre-Processing Techniques, Structural Topic Modelling, Mathematical Algorithms</p>
     <p class="texts">Tools: Python, R, SQLite</p>    
   </div>
   <div class="column">
@@ -47,28 +47,38 @@ title: Portfolio
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Edgar</font>
     <p class="texts">Text analysis on Edgar 10-K and 10-Q form filings of S&P 500 companies to extract meaningful insights and predict stock prices.</p>
-    <p class="texts">Skill Set: Data Crawling/Scraping, Data Cleaning/Wrangling, Text Pre-Processing Techniques, Basic Text Analysis, Sentiment Analysis, Topic Modelling</p> 
+    <p class="texts">Skill Set: Data Crawling/Scraping, Data Engineering, Text Pre-Processing Techniques, Basic Text Analysis, Sentiment Analysis, Topic Modelling</p> 
     <p class="texts">Tools: R, SQLite</p>
   </div>
-</div>
-
-<div class="row">
-  <div class="column">
+ <div class="column">
     <a href="https://github.com/sakjung/airbnb">
       <img src="https://assets.entrepreneur.com/content/3x2/2000/1405612741-airbnb-why-new-logo.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Airbnb</font>
     <p class="texts">Text analysis on Airbnb reviews with publicly opened data source of reviews, listings, and calendar data.</p>
-    <p class="texts">Skill Set: Data Crawling/Scraping, Data Cleaning/Wrangling, Text Pre-Processing Techniques, Basic Text Analysis, Sentiment Analysis, Topic Modelling</p>
+    <p class="texts">Skill Set: Data Crawling/Scraping, Data Engineering, Text Pre-Processing Techniques, Basic Text Analysis, Sentiment Analysis, Topic Modelling</p>
     <p class="texts">Tools: R, SQLite</p>
   </div>
+
+</div>
+<div class="row">
+  <div class="column">
+    <a href="https://github.com/sakjung/sparkify">
+      <img src="https://miro.medium.com/max/1023/0*ecCCtMPRAXGBK8m6.jpg" style="width:100%;height:200px;">
+    </a><br><br>
+    <font class="centered" face='BMHANNAAir' size="+2">Sparkify</font>
+    <p class="texts">Complete ETL pipeline for virtual startup company called Sparkify.</p>
+    <p class="texts">Skill Set: Data Engineering, Data ETL process</p>
+    <p class="texts">Tools: R, SQLite</p>
+  </div>
+<div class="row">
   <div class="column">
     <a href="https://github.com/sakjung/hhl_hhp">
       <img src="https://rascalsbrewing.com/wp-content/uploads/2019/07/hiphop-aw.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Hiphople & Hiphopplaya</font>
     <p class="texts">RSelenium based web scraping tool for the two Korean Hip-Hop online community platforms 'Hiphople' and 'Hiphopplaya', that have dynamically changing web pages.</p>
-    <p class="texts">Skill Set: Data Crawling/Scraping with Selenium, Data Cleaning/Wrangling</p>
+    <p class="texts">Skill Set: Data Crawling/Scraping with Selenium, Data Engineering</p>
     <p class="texts">Tools: R, SQLite</p>
   </div>
 </div>
