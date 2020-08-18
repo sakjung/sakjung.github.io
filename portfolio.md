@@ -69,7 +69,7 @@ title: Portfolio
     <font class="centered" face='BMHANNAAir' size="+2">Sparkify</font>
     <p class="texts">Complete ETL pipeline for virtual startup company called Sparkify.</p>
     <p class="texts">Skill Set: Data Engineering, Data ETL process</p>
-    <p class="texts">Tools: R, SQLite</p>
+    <p class="texts">Tools: Python, PostgreSQL</p>
   </div>
 <div class="row">
   <div class="column">
