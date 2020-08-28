@@ -37,8 +37,7 @@ title: Portfolio
       <img src="https://www.logo.wine/a/logo/Tidal_(service)/Tidal_(service)-Logo.wine.svg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Tidal</font>
-    <p class="texts">A framework to diagnose Tidal's music streaming service by analysing app store reviews data.</p>
-    <p class="texts">Skill Set: Data Crawling/Scraping, Data Engineering, Text Pre-Processing Techniques, Structural Topic Modelling, Mathematical Algorithms</p>
+    <p class="texts">애플과 구글 앱스토어의 리뷰를 통해 Tidal 음원 스트리밍 서비스의 위험, 성공 요소 마이닝 (석사 논문)</p>
     <p class="texts">Tools: Python, R, SQLite</p>    
   </div>
   <div class="column">
@@ -46,8 +45,7 @@ title: Portfolio
       <img src="https://offistraedgarfiling.com/wp-content/uploads/2020/01/Form-10-K.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Edgar</font>
-    <p class="texts">Text analysis on Edgar 10-K and 10-Q form filings of S&P 500 companies to extract meaningful insights and predict stock prices.</p>
-    <p class="texts">Skill Set: Data Crawling/Scraping, Data Engineering, Text Pre-Processing Techniques, Basic Text Analysis, Sentiment Analysis, Topic Modelling</p> 
+    <p class="texts">S&P 500 회사들의 Edgar 10-K, 10-Q form filings 에 대한 텍스트 분석 및 주가 예측.</p>
     <p class="texts">Tools: R, SQLite</p>
   </div>
  <div class="column">
@@ -55,8 +53,7 @@ title: Portfolio
       <img src="https://assets.entrepreneur.com/content/3x2/2000/1405612741-airbnb-why-new-logo.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Airbnb</font>
-    <p class="texts">Text analysis on Airbnb reviews with publicly opened data source of reviews, listings, and calendar data.</p>
-    <p class="texts">Skill Set: Data Crawling/Scraping, Data Engineering, Text Pre-Processing Techniques, Basic Text Analysis, Sentiment Analysis, Topic Modelling</p>
+    <p class="texts">Airbnb의 오픈소스 데이터 (reviews ,listings 그리고 calendar)를 활용한 텍스트 분석 및 평점과 .</p>
     <p class="texts">Tools: R, SQLite</p>
   </div>
 
@@ -67,19 +64,25 @@ title: Portfolio
       <img src="https://miro.medium.com/max/1023/0*ecCCtMPRAXGBK8m6.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Sparkify</font>
-    <p class="texts">Complete ETL pipeline for virtual startup company called Sparkify.</p>
-    <p class="texts">Skill Set: Data Engineering, Data ETL process</p>
+    <p class="texts">가상의 스타트업 회사 Sparkify를 위한 ETL 파이프라인 구축 토이 프로젝트.</p>
     <p class="texts">Tools: Python, PostgreSQL</p>
   </div>
-<div class="row">
   <div class="column">
     <a href="https://github.com/sakjung/hhl_hhp">
       <img src="https://rascalsbrewing.com/wp-content/uploads/2019/07/hiphop-aw.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Hiphople & Hiphopplaya</font>
-    <p class="texts">Crawling the two Korean Hip-Hop online community platforms 'Hiphople' and 'Hiphopplaya'.</p>
-    <p class="texts">Skill Set: Data Crawling/Scraping with Selenium, Data Engineering</p>
+    <p class="texts">셀레니움과 R을 활용한 'Hiphople'와 'Hiphopplaya' 웹 페이지 다이나믹 크롤링</p>
     <p class="texts">Tools: R, Selenium, SQLite</p>
+  </div>
+   <div class="column">
+    <a href="https://github.com/sakjung/fitzroy">
+      <img src="https://lh3.googleusercontent.com/proxy/NIEWE2xSKAXpZXh5I_BN8y2GuNA2Db7YG9LGoAWUlvVStZiJeSZhnq-58CzLBXHGAM2hEdg0b1gOxciXX1BmU8h9ovAdfeCb7SWeEO6aGhfEeYgW_td9JvPneI4tLn26ayLnpm2KSqTgEDsBMdoh0CpstCtd06I5msTCAcI-uZaZmCBhPTKI99FJ8epE3wRyN4eP6fvudqxWrncvkvjxfVPb5xufICZBk1mo8cq9A_3zWszos9miiaZgGz8qr966iD_SObRkwj9di_OFVYMLTL3hI-1iv1-p5d2_HQp7GdJcmg" style="width:100%;height:200px;">
+    </a><br><br>
+    <font class="centered" face='BMHANNAAir' size="+2">Hiphople & Hiphopplaya</font>
+    <p class="texts">핏츠로이 재고 및 고객 관리 툴 개발</p>
+    <p class="texts">Skill Set: Data Engineering, Data Structure, Management Tool Development</p>
+    <p class="texts">Tools: Python, Excel (Power Query, Power Pivot, VBA)</p>
   </div>
 </div>
 
