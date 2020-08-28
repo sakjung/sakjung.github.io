@@ -53,7 +53,7 @@ title: Portfolio
       <img src="https://assets.entrepreneur.com/content/3x2/2000/1405612741-airbnb-why-new-logo.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Airbnb</font>
-    <p class="texts">Airbnb의 오픈소스 데이터 (reviews ,listings 그리고 calendar)를 활용한 텍스트 분석 및 숙박시설 평점, 가격 예측.</p>
+    <p class="texts">Airbnb의 오픈소스 데이터 (reviews, listings, 그리고 calendar)를 활용한 텍스트 분석 및 숙박시설 평점, 가격 예측.</p>
     <p class="texts">Tools: R, SQLite</p>
   </div>
 
