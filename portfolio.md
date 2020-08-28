@@ -79,9 +79,8 @@ title: Portfolio
     <a href="https://github.com/sakjung/fitzroy">
       <img src="https://lh3.googleusercontent.com/proxy/NIEWE2xSKAXpZXh5I_BN8y2GuNA2Db7YG9LGoAWUlvVStZiJeSZhnq-58CzLBXHGAM2hEdg0b1gOxciXX1BmU8h9ovAdfeCb7SWeEO6aGhfEeYgW_td9JvPneI4tLn26ayLnpm2KSqTgEDsBMdoh0CpstCtd06I5msTCAcI-uZaZmCBhPTKI99FJ8epE3wRyN4eP6fvudqxWrncvkvjxfVPb5xufICZBk1mo8cq9A_3zWszos9miiaZgGz8qr966iD_SObRkwj9di_OFVYMLTL3hI-1iv1-p5d2_HQp7GdJcmg" style="width:100%;height:200px;">
     </a><br><br>
-    <font class="centered" face='BMHANNAAir' size="+2">Hiphople & Hiphopplaya</font>
+    <font class="centered" face='BMHANNAAir' size="+2">Fitzroy</font>
     <p class="texts">핏츠로이 재고 및 고객 관리 툴 개발</p>
-    <p class="texts">Skill Set: Data Engineering, Data Structure, Management Tool Development</p>
     <p class="texts">Tools: Python, Excel (Power Query, Power Pivot, VBA)</p>
   </div>
 </div>
