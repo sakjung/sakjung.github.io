@@ -37,7 +37,7 @@ title: Portfolio
       <img src="https://www.logo.wine/a/logo/Tidal_(service)/Tidal_(service)-Logo.wine.svg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Tidal</font>
-    <p class="texts">애플과 구글 앱스토어의 리뷰분석을 통 Tidal 음원 스트리밍 서비스의 위험, 성공 요소 마이닝 (석사 논문)</p>
+    <p class="texts">애플과 구글 앱스토어의 리뷰분석을 통한 Tidal 음원 스트리밍 서비스의 위험, 성공 요소 마이닝 (석사 논문)</p>
     <p class="texts">Tools: Python, R, SQLite</p>    
   </div>
   <div class="column">
