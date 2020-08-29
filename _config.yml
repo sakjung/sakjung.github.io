@@ -4,7 +4,7 @@
 title: Sakjung World
 
 # Short description of your site
-# description: Real Busan Sanai
+description:
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -158,7 +158,7 @@ excerpt_length: 50
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
-# title-separator: "-"
+title-separator: "-"
 
 # Ruby Date Format
 date_format: "%B %-d, %Y"
