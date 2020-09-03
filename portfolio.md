@@ -77,7 +77,7 @@ title: Portfolio
   </div>
    <div class="column">
     <a href="https://github.com/sakjung/fitzroy">
-      <img src="https://lh3.googleusercontent.com/proxy/NIEWE2xSKAXpZXh5I_BN8y2GuNA2Db7YG9LGoAWUlvVStZiJeSZhnq-58CzLBXHGAM2hEdg0b1gOxciXX1BmU8h9ovAdfeCb7SWeEO6aGhfEeYgW_td9JvPneI4tLn26ayLnpm2KSqTgEDsBMdoh0CpstCtd06I5msTCAcI-uZaZmCBhPTKI99FJ8epE3wRyN4eP6fvudqxWrncvkvjxfVPb5xufICZBk1mo8cq9A_3zWszos9miiaZgGz8qr966iD_SObRkwj9di_OFVYMLTL3hI-1iv1-p5d2_HQp7GdJcmg" style="width:100%;height:200px;">
+      <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA0MDdfMTc3%2FMDAxNTg2MjYzNjE4NjUz.KcvL-DXC59cycQYdB-Fc7Tmk4bvHq-OprmEZ3Ncm6h4g.H9cCwtztmXgNiwbReBY835I_8bgH43GMx30zkX1SzgIg.JPEG.rhksdn112%2FIMG_4986.jpg&type=sc960_832" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Fitzroy</font>
     <p class="texts">핏츠로이 재고 및 고객 관리 툴 개발</p>
