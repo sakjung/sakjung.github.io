@@ -60,6 +60,14 @@ title: Portfolio
 </div>
 <div class="row">
   <div class="column">
+    <a href="https://sakjung.github.io/payday-loan/">
+      <img src="https://www.fmgoldcorp.com/wp-content/uploads/2020/04/important-aspects-of-faxless-payday-loans.jpg" style="width:100%;height:200px;">
+    </a><br><br>
+    <font class="centered" face='BMHANNAAir' size="+2">Payday Loan</font>
+    <p class="texts">가상의 고객 payday loan mock data에 대한 통계 분석 및 데이터 시각화</p>
+    <p class="texts">Tools: R</p>
+  </div>
+  <div class="column">
     <a href="https://github.com/sakjung/sparkify">
       <img src="https://miro.medium.com/max/1023/0*ecCCtMPRAXGBK8m6.jpg" style="width:100%;height:200px;">
     </a><br><br>
@@ -74,14 +82,6 @@ title: Portfolio
     <font class="centered" face='BMHANNAAir' size="+2">Hiphople & Hiphopplaya</font>
     <p class="texts">셀레니움과 R을 활용한 'Hiphople'와 'Hiphopplaya' 웹 페이지 다이나믹 크롤링</p>
     <p class="texts">Tools: R, Selenium, SQLite</p>
-  </div>
-   <div class="column">
-    <a href="https://github.com/sakjung/fitzroy">
-      <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA0MDdfMTc3%2FMDAxNTg2MjYzNjE4NjUz.KcvL-DXC59cycQYdB-Fc7Tmk4bvHq-OprmEZ3Ncm6h4g.H9cCwtztmXgNiwbReBY835I_8bgH43GMx30zkX1SzgIg.JPEG.rhksdn112%2FIMG_4986.jpg&type=sc960_832" style="width:100%;height:200px;">
-    </a><br><br>
-    <font class="centered" face='BMHANNAAir' size="+2">Fitzroy</font>
-    <p class="texts">핏츠로이 재고 및 고객 관리 툴 개발</p>
-    <p class="texts">Tools: Python, Excel (Power Query, Power Pivot, VBA)</p>
   </div>
 </div>
 
