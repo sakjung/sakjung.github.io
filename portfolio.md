@@ -53,7 +53,7 @@ title: Portfolio
       <img src="https://assets.entrepreneur.com/content/3x2/2000/1405612741-airbnb-why-new-logo.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Airbnb</font>
-    <p class="texts">Airbnb의 오픈소스 데이터 (reviews, listings, calendar)를 활용한 텍스트 분석 및 숙박시설 평점, 가격 예측.</p>
+    <p class="texts">Airbnb의 오픈소스 데이터 (reviews, listings, calendar)를 활용한 텍스트 분석 및 숙박시설 평점과 가격 예측.</p>
     <p class="texts">Tools: R, SQLite</p>
   </div>
 
@@ -64,7 +64,7 @@ title: Portfolio
       <img src="https://www.fmgoldcorp.com/wp-content/uploads/2020/04/important-aspects-of-faxless-payday-loans.jpg" style="width:100%;height:200px;">
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Payday Loan</font>
-    <p class="texts">가상 고객들의 소액단기대출 mock data에 대한 통계 분석 및 데이터 시각화</p>
+    <p class="texts">소액단기대출 mock data에 대한 통계 분석 및 데이터 시각화</p>
     <p class="texts">Tools: R</p>
   </div>
   <div class="column">
