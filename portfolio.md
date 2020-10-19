@@ -40,7 +40,7 @@ title: Portfolio
     <p class="texts">애플과 구글 앱스토어의 리뷰분석을 통한 Tidal 음원 스트리밍 서비스의 위험, 성공 요소 마이닝 (석사 논문)</p>
     <a href="https://github.com/sakjung/dissertation">
       <p class="texts">Repository</p>
-    </a><br>
+    </a>
     <p class="texts">Tools: Python, R, SQLite</p>    
   </div>
   <div class="column">
@@ -51,7 +51,7 @@ title: Portfolio
     <p class="texts">S&P 500 회사들의 Edgar 10-K, 10-Q form filings 에 대한 텍스트 분석 및 주가 예측.</p>
     <a href="https://github.com/sakjung/edgar">
       <p class="texts">Repository</p>
-    </a><br>
+    </a>
     <p class="texts">Tools: R, SQLite</p>
   </div>
  <div class="column">
@@ -76,7 +76,7 @@ title: Portfolio
     <p class="texts">소액단기대출 mock data에 대한 통계 분석 및 데이터 시각화</p>
     <a href="https://sakjung.github.io/payday-loan/">
       <p class="texts">Project Page</p>
-    </a><br><br>
+    </a><br>
     <p class="texts">Tools: R</p>
   </div>
   <div class="column">
@@ -87,7 +87,7 @@ title: Portfolio
     <p class="texts">가상의 스타트업 회사 Sparkify를 위한 ETL 파이프라인 구축 토이 프로젝트.</p>
     <a href="https://github.com/sakjung/sparkify">
       <p class="texts">Repository</p>
-    </a><br>
+    </a>
     <p class="texts">Tools: Python, PostgreSQL</p>
   </div>
   <div class="column">
