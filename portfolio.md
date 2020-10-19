@@ -38,10 +38,10 @@ title: Portfolio
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Tidal</font>
     <p class="texts">애플과 구글 앱스토어의 리뷰분석을 통한 Tidal 음원 스트리밍 서비스의 위험, 성공 요소 마이닝 (석사 논문)</p>
+    <p class="texts">Tools: Python, R, SQLite</p>
     <a href="https://github.com/sakjung/dissertation">
       <p class="texts">Repository</p>
     </a>
-    <p class="texts">Tools: Python, R, SQLite</p>    
   </div>
   <div class="column">
     <a href="https://github.com/sakjung/edgar">
@@ -49,10 +49,10 @@ title: Portfolio
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Edgar</font>
     <p class="texts">S&P 500 회사들의 Edgar 10-K, 10-Q form filings 에 대한 텍스트 분석 및 주가 예측.</p>
+    <p class="texts">Tools: R, SQLite</p>
     <a href="https://github.com/sakjung/edgar">
       <p class="texts">Repository</p>
     </a>
-    <p class="texts">Tools: R, SQLite</p>
   </div>
  <div class="column">
     <a href="https://github.com/sakjung/airbnb">
@@ -60,10 +60,10 @@ title: Portfolio
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Airbnb</font>
     <p class="texts">Airbnb의  데이터 (reviews, listings, calendar)를 활용한 텍스트 분석 및 숙박시설 평점과 가격 예측.</p>
+    <p class="texts">Tools: R, SQLite</p>
     <a href="https://github.com/sakjung/airbnb">
       <p class="texts">Repository</p>
     </a>
-    <p class="texts">Tools: R, SQLite</p>
   </div>
 
 </div>
@@ -74,10 +74,10 @@ title: Portfolio
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Payday Loan</font>
     <p class="texts">소액단기대출 mock data에 대한 통계 분석 및 데이터 시각화</p>
+    <p class="texts">Tools: R</p>
     <a href="https://sakjung.github.io/payday-loan/">
       <p class="texts">Project Page</p>
     </a>
-    <p class="texts">Tools: R</p>
   </div>
   <div class="column">
     <a href="https://github.com/sakjung/sparkify">
@@ -85,10 +85,10 @@ title: Portfolio
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Sparkify</font>
     <p class="texts">가상의 스타트업 회사 Sparkify를 위한 ETL 파이프라인 구축 토이 프로젝트.</p>
+    <p class="texts">Tools: Python, PostgreSQL</p>
     <a href="https://github.com/sakjung/sparkify">
       <p class="texts">Repository</p>
     </a>
-    <p class="texts">Tools: Python, PostgreSQL</p>
   </div>
   <div class="column">
     <a href="https://github.com/sakjung/hhl_hhp">
@@ -96,10 +96,10 @@ title: Portfolio
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Hiphople & Hiphopplaya</font>
     <p class="texts">셀레니움과 R을 활용한 'Hiphople'와 'Hiphopplaya' 웹 페이지 다이나믹 크롤링</p>
+    <p class="texts">Tools: R, Selenium, SQLite</p>
     <a href="https://github.com/sakjung/hhl_hhp">
       <p class="texts">Repository</p>
     </a>
-    <p class="texts">Tools: R, Selenium, SQLite</p>
   </div>
 </div>
 
