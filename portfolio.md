@@ -76,7 +76,7 @@ title: Portfolio
     <p class="texts">소액단기대출 mock data에 대한 통계 분석 및 데이터 시각화</p>
     <a href="https://sakjung.github.io/payday-loan/">
       <p class="texts">Project Page</p>
-    </a><br>
+    </a>
     <p class="texts">Tools: R</p>
   </div>
   <div class="column">
