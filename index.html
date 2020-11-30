@@ -3,26 +3,16 @@ layout: page
 title: Sakjung World
 use-site-title: false
 ---
-<!-- <img src="https://yo8balltown.cafe24.com/img/main.jpg" alt="" class="center">   
- -->
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>map</title>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=a5h47ez3rg&callback=initMap"></script>
+</head>
 <style>
-/*   .music {
-   position: absolute;
-   bottom: 150px;
-   right: 160px;
-   color: black;
-   font-weight: bold;
- }
- 
- .data {
-  position: absolute;
-  bottom: 150px;
-  right: 490px;
-  color: black;
-  font-weight: bold;
- } */
- 
  .centered {
   text-align: center;
   font-weight: bold;
@@ -45,10 +35,18 @@ use-site-title: false
   }
  
 </style>
+<body>
+<div id="map" style="width:100%;height:400px;"></div>
+<script>
+var mapOptions = {
+    center: new naver.maps.LatLng(37.3595704, 127.105399),
+    zoom: 10
+};
 
-<!-- height:300px; -->
-
-<div class="row">
+var map = new naver.maps.Map('map', mapOptions);
+</script>
+ 
+ <div class="row">
   <div class="column">
     <a href="https://sakjung.github.io/data_engineering">
       <img src="https://images.vexels.com/media/users/3/135781/isolated/preview/c409d409708a06c921ab88ed9e43bc9e-database-circle-icon-by-vexels.png" style="width:100%;">
@@ -61,25 +59,7 @@ use-site-title: false
     </a><br><br>
     <font class="centered" face='BMHANNAAir' size="+2">Music</font>
   </div>
-</div>
+</div> 
+</body>
+</html>
 
-<!-- <div class="container">
-data
-https://image.flaticon.com/icons/png/512/2038/2038744.png
-https://cdn4.iconfinder.com/data/icons/science-and-technology-5-7/65/238-512.png
-
-music
-https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/2689333281556860964-512.png
-https://icon-library.com/images/music-icon-png/music-icon-png-9.jpg
-https://cdn1.iconfinder.com/data/icons/essentials-iso-2-flat/74/064_-_Music-512.png
-  <a href="https://sakjung.github.io/data_engineering">
-    <img style="width:300px" src="https://cdn1.iconfinder.com/data/icons/data-analytics-sketchy/60/019_-_Reverse_Engineering-settings-data-analytics-512.png">
-    <div class="centered">Data Engineering</div>
-  </a>
-  <a href="https://sakjung.github.io/data_analytics">
-    <img style="width:300px" src="https://cdn4.iconfinder.com/data/icons/science-and-technology-5-7/65/238-512.png">
-    <div class="centered">Data Analytics</div>
-  </a> 
-</div>
-https://cdn1.iconfinder.com/data/icons/data-science-flat/58/024_-_Code_Engineering-256.png
- -->
